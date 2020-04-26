@@ -97,7 +97,7 @@
     <RadioGroup
         android:layout_width="158dp"
         android:layout_height="68dp"
-        tools:layout_editor_absoluteX="96dp"
-        tools:layout_editor_absoluteY="508dp" />
+        tools:layout_editor_absoluteX="180dp"
+        tools:layout_editor_absoluteY="535dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
