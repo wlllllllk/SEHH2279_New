@@ -1,4 +1,4 @@
-package com.example.test;
+package com.example.sehh2279new;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -24,7 +24,7 @@ public class ProductDetailsFragment extends Fragment {
         TextView someTextView = (TextView) view.findViewById(R.id.textView4);
         tvamount = (TextView) view.findViewById(R.id.tv_amount);
 
-        tvamount.setText("amount");
+        tvamount.setText(String.valueOf(amount));
 
         //someTextView.setText("$9.9");
         //someTextView.setPaintFlags(someTextView.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);

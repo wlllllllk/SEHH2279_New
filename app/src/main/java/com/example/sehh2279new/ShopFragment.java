@@ -1,4 +1,4 @@
-package com.example.test;
+package com.example.sehh2279new;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
