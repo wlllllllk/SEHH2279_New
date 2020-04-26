@@ -16,7 +16,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.066"
-        app:srcCompat="@mipmap/ic_launcher" />
+        app:srcCompat="@drawable/apple" />
 
     <TextView
         android:id="@+id/textView2"
@@ -24,6 +24,7 @@
         android:layout_height="32dp"
         android:text="Quantity"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#040404"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -38,6 +39,8 @@
         android:layout_height="30dp"
         android:text="Total amount of payment"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:textColorHint="@color/design_default_color_on_secondary"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -66,6 +69,7 @@
         android:layout_height="29dp"
         android:text="Product Delivery"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/design_default_color_on_secondary"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -80,6 +84,7 @@
         android:layout_height="29dp"
         android:text="Payment method"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/design_default_color_on_secondary"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
