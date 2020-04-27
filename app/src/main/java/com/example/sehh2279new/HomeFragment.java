@@ -1,5 +1,6 @@
 package com.example.sehh2279new;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -20,16 +21,21 @@ public class HomeFragment extends Fragment {
         getActivity().setTitle("Home");
 
         View view = inflater.inflate(R.layout.fragment_home, container, false);
-        Button button = view.findViewById(R.id.button);
+        Button button = (Button) view.findViewById(R.id.button);
+
         button.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                Fragment fragment = new ProductDetailsFragment();
+                /*Fragment fragment = new ProductDetailsFragment();
                 FragmentManager fragmentManager = getFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
                 fragmentTransaction.replace(R.id.fragment_container, fragment);
                 fragmentTransaction.addToBackStack(null);
-                fragmentTransaction.commit();
+                fragmentTransaction.commit();*/
+
+                Intent i = new Intent(getActivity(), ProductDetailsActivity.class);
+                startActivity(i);
+
             }
         });
 

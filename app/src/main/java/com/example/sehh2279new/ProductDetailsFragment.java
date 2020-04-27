@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -49,6 +50,15 @@ public class ProductDetailsFragment extends Fragment {
             }
         });
 
+        Button button_add_to_cart = (Button) view.findViewById(R.id.button_add_to_cart);
+        button_add_to_cart.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Toast.makeText(getContext(), "Added to cart", Toast.LENGTH_SHORT).show();
+            }
+        });
+
         return view;
     }
+
 }
