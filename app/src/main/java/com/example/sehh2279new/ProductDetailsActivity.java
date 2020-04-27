@@ -2,6 +2,7 @@ package com.example.sehh2279new;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -48,6 +49,9 @@ public class ProductDetailsActivity extends AppCompatActivity implements View.On
                 break;
             case (R.id.button_add_to_cart):
                 Toast.makeText(getApplicationContext(), "Added to cart", Toast.LENGTH_SHORT).show();
+                Intent i = new Intent (ProductDetailsActivity.this, ShopActivityTest.class);
+                i.putExtra("key",amount);
+                startActivity(i);
                 break;
         }
     }

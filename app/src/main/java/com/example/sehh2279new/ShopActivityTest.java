@@ -6,23 +6,23 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class ShoppingcartActivity extends AppCompatActivity {
+public class ShopActivityTest extends AppCompatActivity {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.shoppingcart);
-        TextView quantitytext = findViewById(R.id.textView20);
+        /*TextView quantitytext = findViewById(R.id.textView20);
         TextView pricetext = findViewById(R.id.textView25);
         Bundle extras = getIntent().getExtras();
         String value = extras.getString("key");
         int quantity = Integer.parseInt(value);
-        quantitytext.setText(value);
+        quantitytext.setText(value);*/
         //double price = 7.7 * quantity;
         //pricetext.setText(price);
     }
 }
-

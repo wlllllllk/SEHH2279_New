@@ -10,8 +10,6 @@ import android.widget.Button;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
 
 public class HomeFragment extends Fragment {
 
@@ -45,6 +43,17 @@ public class HomeFragment extends Fragment {
             public void onClick(View v){
 
                 Intent i = new Intent(getActivity(), ConfirmationActivity.class);
+                startActivity(i);
+
+            }
+        });
+
+        Button button6 = (Button) view.findViewById(R.id.button6);
+        button6.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+
+                Intent i = new Intent(getActivity(), ShopActivityTest.class);
                 startActivity(i);
 
             }
