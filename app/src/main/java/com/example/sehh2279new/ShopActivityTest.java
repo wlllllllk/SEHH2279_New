@@ -11,11 +11,15 @@ import android.widget.ImageView;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class ShopActivityTest extends AppCompatActivity {
-
+    public int quantity;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.shoppingcart);
+        ProductDetailsActivity pda = new ProductDetailsActivity();
+        quantity = pda.amount;
+        Toast.makeText(getApplicationContext(), "quantity" + quantity, Toast.LENGTH_SHORT).show();
+
         /*TextView quantitytext = findViewById(R.id.textView20);
         TextView pricetext = findViewById(R.id.textView25);
         Bundle extras = getIntent().getExtras();
