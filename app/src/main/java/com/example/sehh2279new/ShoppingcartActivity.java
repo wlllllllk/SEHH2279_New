@@ -23,6 +23,7 @@ public class ShoppingcartActivity extends AppCompatActivity {
         quantitytext.setText(value);
         //double price = 7.7 * quantity;
         //pricetext.setText(price);
+        //
     }
 }
 
