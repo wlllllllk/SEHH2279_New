@@ -28,6 +28,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".ShopActivityTest"></activity>
+        <activity android:name=".payment"></activity>
     </application>
 
 </manifest>
