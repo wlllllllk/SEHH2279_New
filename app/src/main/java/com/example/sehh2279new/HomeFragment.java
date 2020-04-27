@@ -21,8 +21,8 @@ public class HomeFragment extends Fragment {
         getActivity().setTitle("Home");
 
         View view = inflater.inflate(R.layout.fragment_home, container, false);
-        Button button = (Button) view.findViewById(R.id.button);
 
+        Button button = (Button) view.findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
@@ -34,6 +34,17 @@ public class HomeFragment extends Fragment {
                 fragmentTransaction.commit();*/
 
                 Intent i = new Intent(getActivity(), ProductDetailsActivity.class);
+                startActivity(i);
+
+            }
+        });
+
+        Button button1 = (Button) view.findViewById(R.id.button1);
+        button1.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+
+                Intent i = new Intent(getActivity(), ConfirmationActivity.class);
                 startActivity(i);
 
             }
