@@ -16,12 +16,11 @@ public class ShopActivityTest extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.shoppingcart);
-        /*TextView quantitytext = findViewById(R.id.textView20);
+        TextView quantitytext = findViewById(R.id.textView20);
         TextView pricetext = findViewById(R.id.textView25);
         Bundle extras = getIntent().getExtras();
-        String value = extras.getString("key");
-        int quantity = Integer.parseInt(value);
-        quantitytext.setText(value);*/
+        int value = extras.getInt("key");
+        quantitytext.setText(Integer.toString(value));
         //double price = 7.7 * quantity;
         //pricetext.setText(price);
     }
