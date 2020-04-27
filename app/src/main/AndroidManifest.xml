@@ -9,12 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ConfirmationActivity">
+        <activity
+            android:name=".ConfirmationActivity"
+            android:theme="@style/AppTheme.NoTitleBar">
         </activity>
 
         <activity
             android:name=".ProductDetailsActivity"
             android:parentActivityName=".MainActivity" />
+
         <activity
             android:name=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
@@ -24,6 +27,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
     </application>
 
 </manifest>
