@@ -38,7 +38,8 @@ public class ProductDetailsActivity extends AppCompatActivity implements View.On
     public void onClick(View v){
         switch (v.getId()){
             case (R.id.button_minus):
-                amount -= 1;
+                if(amount > 1)
+                    amount -= 1;
                 tv_amount.setText(String.valueOf(amount));
                 break;
             case (R.id.button_add):
