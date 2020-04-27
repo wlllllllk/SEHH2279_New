@@ -37,22 +37,21 @@ public class ProductDetailsActivity extends AppCompatActivity implements View.On
 
     @Override
     public void onClick(View v){
-        ShopActivityTest sat = new ShopActivityTest();
         switch (v.getId()){
             case (R.id.button_minus):
                 if(amount > 1)
                     amount -= 1;
-                sat.quantity = amount;
                 tv_amount.setText(String.valueOf(amount));
                 break;
             case (R.id.button_add):
                 amount += 1;
                 tv_amount.setText(String.valueOf(amount));
-                sat.quantity = amount;
                 break;
             case (R.id.button_add_to_cart):
                 Toast.makeText(getApplicationContext(), "Added to cart", Toast.LENGTH_SHORT).show();
-                sat.quantity = amount;
+                Intent i = new Intent (ProductDetailsActivity.this, ShopActivityTest.class);
+                i.putExtra("key",amount);
+                startActivity(i);
                 break;
         }
     }
