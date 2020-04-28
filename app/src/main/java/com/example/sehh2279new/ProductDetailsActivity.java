@@ -31,8 +31,6 @@ public class ProductDetailsActivity extends AppCompatActivity implements View.On
         button_minus.setOnClickListener(this);
         button_add.setOnClickListener(this);
         button_add_to_cart.setOnClickListener(this);
-
-
     }
 
     @Override

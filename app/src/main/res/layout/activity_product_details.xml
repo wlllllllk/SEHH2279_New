@@ -180,7 +180,7 @@
                     android:paddingTop="10sp"
                     android:paddingRight="20sp"
                     android:paddingBottom="10sp"
-                    android:text="This apple is very good. This apple is very good. This apple is very good. This apple is very good. This apple is very good. "
+                    android:text="This apple is very good. Buy this apple la. This apple is very good. Buy this apple la. "
                     android:textColor="#505050"
                     android:textSize="20sp" />
 
@@ -253,12 +253,12 @@
                 <TextView
                     android:id="@+id/tv_review1"
                     android:layout_width="match_parent"
-                    android:layout_height="121dp"
+                    android:layout_height="wrap_content"
                     android:paddingLeft="15sp"
                     android:paddingTop="10sp"
                     android:paddingRight="20sp"
                     android:paddingBottom="10sp"
-                    android:text="This apple is very good. This apple is very good. This apple is very good. This apple is very good. This apple is very good. "
+                    android:text="This is really really really really really really good. Recommended!"
                     android:textColor="#505050"
                     android:textSize="20sp" />
 
@@ -297,12 +297,12 @@
                 <TextView
                     android:id="@+id/tv_review2"
                     android:layout_width="match_parent"
-                    android:layout_height="121dp"
+                    android:layout_height="wrap_content"
                     android:paddingLeft="15sp"
                     android:paddingTop="10sp"
                     android:paddingRight="20sp"
                     android:paddingBottom="10sp"
-                    android:text="This apple is very good. This apple is very good. This apple is very good. This apple is very good. This apple is very good. "
+                    android:text="Fantastic."
                     android:textColor="#505050"
                     android:textSize="20sp" />
 
@@ -367,11 +367,11 @@
 
                                 <ImageView
                                     android:id="@+id/imageView7"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
+                                    android:layout_width="100dp"
+                                    android:layout_height="100dp"
                                     android:layout_weight="1"
                                     android:paddingTop="0dp"
-                                    app:srcCompat="@android:drawable/btn_star_big_on" />
+                                    app:srcCompat="@drawable/orange_fruit_vitamins_vitamin_c_54369" />
 
                                 <TextView
                                     android:id="@+id/textView30"
@@ -406,11 +406,11 @@
 
                                 <ImageView
                                     android:id="@+id/imageView9"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
+                                    android:layout_width="100dp"
+                                    android:layout_height="100dp"
                                     android:layout_weight="1"
                                     android:paddingTop="0dp"
-                                    app:srcCompat="@android:drawable/btn_star_big_on" />
+                                    app:srcCompat="@drawable/orange_fruit_vitamins_vitamin_c_54369" />
 
                                 <TextView
                                     android:id="@+id/textView31"
@@ -445,11 +445,11 @@
 
                                 <ImageView
                                     android:id="@+id/imageView10"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
+                                    android:layout_width="100dp"
+                                    android:layout_height="100dp"
                                     android:layout_weight="1"
                                     android:paddingTop="0dp"
-                                    app:srcCompat="@android:drawable/btn_star_big_on" />
+                                    app:srcCompat="@drawable/orange_fruit_vitamins_vitamin_c_54369" />
 
                                 <TextView
                                     android:id="@+id/textView32"
@@ -484,11 +484,11 @@
 
                                 <ImageView
                                     android:id="@+id/imageView11"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
+                                    android:layout_width="100dp"
+                                    android:layout_height="100dp"
                                     android:layout_weight="1"
                                     android:paddingTop="0dp"
-                                    app:srcCompat="@android:drawable/btn_star_big_on" />
+                                    app:srcCompat="@drawable/orange_fruit_vitamins_vitamin_c_54369" />
 
                                 <TextView
                                     android:id="@+id/textView33"
@@ -523,11 +523,11 @@
 
                                 <ImageView
                                     android:id="@+id/imageView12"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
+                                    android:layout_width="100dp"
+                                    android:layout_height="100dp"
                                     android:layout_weight="1"
                                     android:paddingTop="0dp"
-                                    app:srcCompat="@android:drawable/btn_star_big_on" />
+                                    app:srcCompat="@drawable/orange_fruit_vitamins_vitamin_c_54369" />
 
                                 <TextView
                                     android:id="@+id/textView34"
@@ -561,11 +561,11 @@
 
                                 <ImageView
                                     android:id="@+id/imageView13"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
+                                    android:layout_width="100dp"
+                                    android:layout_height="100dp"
                                     android:layout_weight="1"
                                     android:paddingTop="0dp"
-                                    app:srcCompat="@android:drawable/btn_star_big_on" />
+                                    app:srcCompat="@drawable/orange_fruit_vitamins_vitamin_c_54369" />
 
                                 <TextView
                                     android:id="@+id/textView35"
@@ -601,7 +601,9 @@
                 </LinearLayout>
 
             </LinearLayout>
+
         </LinearLayout>
+
     </ScrollView>
 
 </RelativeLayout>
