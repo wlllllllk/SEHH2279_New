@@ -12,17 +12,24 @@ import android.widget.Toast;
 public class ProductDetailsActivity extends AppCompatActivity implements View.OnClickListener{
 
     int amount = 1;
-    TextView tv_amount;
+    TextView tv_amount, tv_view_reviews, tv_view_related;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_product_details);
 
+        this.setTitle("Product Details");
         getSupportActionBar().setDefaultDisplayHomeAsUpEnabled(true);
 
         tv_amount = (TextView) findViewById(R.id.tv_amount);
         tv_amount.setText(String.valueOf(amount));
+
+        tv_view_reviews = (TextView) findViewById(R.id.tv_reviews_view_all);
+        tv_view_related = (TextView) findViewById(R.id.tv_related_view_all);
+
+        tv_view_reviews.setOnClickListener(this);
+        tv_view_related.setOnClickListener(this);
 
         Button button_minus = (Button) findViewById(R.id.button_minus);
         Button button_add = (Button) findViewById(R.id.button_add);
@@ -50,6 +57,12 @@ public class ProductDetailsActivity extends AppCompatActivity implements View.On
                 Intent i = new Intent (ProductDetailsActivity.this, ShopActivityTest.class);
                 i.putExtra("key",amount);
                 startActivity(i);
+                break;
+            case (R.id.tv_reviews_view_all):
+                Toast.makeText(getApplicationContext(), "View all reviews", Toast.LENGTH_SHORT).show();
+                break;
+            case (R.id.tv_related_view_all):
+                Toast.makeText(getApplicationContext(), "View all related products", Toast.LENGTH_SHORT).show();
                 break;
         }
     }
