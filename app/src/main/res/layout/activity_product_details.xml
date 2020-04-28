@@ -96,13 +96,6 @@
                         android:layout_weight="0"
                         app:srcCompat="@drawable/star_ratings" />
 
-                    <ImageView
-                        android:id="@+id/imageView18"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="0"
-                        app:srcCompat="@drawable/half_star_ratings" />
-
                     <Space
                         android:layout_width="20dp"
                         android:layout_height="wrap_content"
@@ -256,7 +249,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="0"
-                        android:text="   4.5 "
+                        android:text="   4 "
                         android:textColor="#FF9800"
                         android:textSize="18sp" />
 

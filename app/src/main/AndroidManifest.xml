@@ -27,8 +27,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ShopActivityTest"></activity>
-        <activity android:name=".payment"></activity>
+
+        <activity android:name=".ShopActivityTest"
+            android:parentActivityName=".MainActivity" />
+
+        <activity android:name=".payment"
+            android:parentActivityName=".ShopActivityTest" />
+
     </application>
 
 </manifest>

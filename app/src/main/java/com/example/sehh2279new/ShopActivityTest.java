@@ -19,6 +19,10 @@ public class ShopActivityTest extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.shoppingcart);
+
+        this.setTitle("Shopping Cart");
+        getSupportActionBar().setDefaultDisplayHomeAsUpEnabled(true);
+
         TextView quantitytext = findViewById(R.id.textView20);
         TextView pricetext = findViewById(R.id.textView25);
         Button checkout = findViewById(R.id.button5);
@@ -28,6 +32,7 @@ public class ShopActivityTest extends AppCompatActivity {
         quantitytext.setText(Integer.toString(value));
         price = 7.7 * value;
         pricetext.setText(Double.toString(price));
+
         checkout.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
@@ -39,6 +44,7 @@ public class ShopActivityTest extends AppCompatActivity {
 
             }
         });
+
         delete.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){

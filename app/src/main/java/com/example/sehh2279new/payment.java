@@ -15,6 +15,10 @@ public class payment extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.payment);
+
+        this.setTitle("Checkout");
+        getSupportActionBar().setDefaultDisplayHomeAsUpEnabled(true);
+
         TextView quantitytext2 = findViewById(R.id.textView3);
         TextView pricetext2 = findViewById(R.id.textView5);
         Button confirm = findViewById(R.id.button);
