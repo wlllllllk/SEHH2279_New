@@ -43,7 +43,7 @@
                         android:layout_width="10dp"
                         android:layout_height="72dp"
                         android:layout_weight="1"
-                        android:background="@color/colorPrimaryDark"
+                        android:background="@color/colorButton"
                         android:text="@string/Detail" />
                 </LinearLayout>
 
@@ -102,7 +102,7 @@
                         android:layout_width="10dp"
                         android:layout_height="72dp"
                         android:layout_weight="1"
-                        android:background="@color/colorPrimaryDark"
+                        android:background="@color/colorButton"
                         android:text="@string/Detail" />
                 </LinearLayout>
 
@@ -161,7 +161,7 @@
                         android:layout_width="10dp"
                         android:layout_height="72dp"
                         android:layout_weight="1"
-                        android:background="@color/colorPrimaryDark"
+                        android:background="@color/colorButton"
                         android:text="@string/Detail" />
 
                 </LinearLayout>
@@ -221,7 +221,7 @@
                         android:layout_width="10dp"
                         android:layout_height="72dp"
                         android:layout_weight="1"
-                        android:background="@color/colorPrimaryDark"
+                        android:background="@color/colorButton"
                         android:text="@string/Detail" />
 
                 </LinearLayout>
@@ -282,7 +282,7 @@
                         android:layout_width="10dp"
                         android:layout_height="72dp"
                         android:layout_weight="1"
-                        android:background="@color/colorPrimaryDark"
+                        android:background="@color/colorButton"
                         android:text="@string/Detail" />
                 </LinearLayout>
 
@@ -340,7 +340,7 @@
                         android:layout_width="10dp"
                         android:layout_height="72dp"
                         android:layout_weight="1"
-                        android:background="@color/colorPrimaryDark"
+                        android:background="@color/colorButton"
                         android:text="@string/Detail" />
                 </LinearLayout>
 
@@ -399,7 +399,7 @@
                         android:layout_width="10dp"
                         android:layout_height="72dp"
                         android:layout_weight="1"
-                        android:background="@color/colorPrimaryDark"
+                        android:background="@color/colorButton"
                         android:text="@string/Detail" />
                 </LinearLayout>
 

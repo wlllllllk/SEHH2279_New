@@ -8,7 +8,6 @@ import android.view.View;
 import android.widget.TextView;
 
 public class ShoppingRecordsActivity extends AppCompatActivity {
-    private TextView tv_shoprecodrds;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,8 +16,6 @@ public class ShoppingRecordsActivity extends AppCompatActivity {
 
         this.setTitle("Shopping Records");
         getSupportActionBar().setDefaultDisplayHomeAsUpEnabled(true);
-
-        tv_shoprecodrds = findViewById(R.id.tv_shoprecords);
 
     }
 }

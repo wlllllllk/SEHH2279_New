@@ -59,6 +59,17 @@ public class HomeFragment extends Fragment {
             }
         });
 
+        Button button8 = (Button) view.findViewById(R.id.button8);
+        button8.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+
+                Intent i = new Intent(getActivity(), SortFilter.class);
+                startActivity(i);
+
+            }
+        });
+
         return view;
     }
 
