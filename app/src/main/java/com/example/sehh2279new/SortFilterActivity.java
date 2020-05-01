@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class SortFilter extends AppCompatActivity {
+public class SortFilterActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -13,5 +13,11 @@ public class SortFilter extends AppCompatActivity {
 
         this.setTitle("Sort & Filter");
         getSupportActionBar().setDefaultDisplayHomeAsUpEnabled(true);
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        finish();
+        return true;
     }
 }

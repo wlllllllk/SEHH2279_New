@@ -68,4 +68,10 @@ public class ProductDetailsActivity extends AppCompatActivity implements View.On
         }
     }
 
+    @Override
+    public boolean onSupportNavigateUp() {
+        finish();
+        return true;
+    }
+
 }

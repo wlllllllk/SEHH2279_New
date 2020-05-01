@@ -64,7 +64,7 @@ public class HomeFragment extends Fragment {
             @Override
             public void onClick(View v){
 
-                Intent i = new Intent(getActivity(), SortFilter.class);
+                Intent i = new Intent(getActivity(), SortFilterActivity.class);
                 startActivity(i);
 
             }

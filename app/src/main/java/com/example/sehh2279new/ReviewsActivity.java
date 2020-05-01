@@ -13,6 +13,11 @@ public class ReviewsActivity extends AppCompatActivity {
 
         this.setTitle("Reviews");
         getSupportActionBar().setDefaultDisplayHomeAsUpEnabled(true);
+    }
 
+    @Override
+    public boolean onSupportNavigateUp() {
+        finish();
+        return true;
     }
 }
