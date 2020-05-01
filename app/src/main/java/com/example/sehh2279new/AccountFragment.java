@@ -16,7 +16,7 @@ import androidx.fragment.app.Fragment;
 public class AccountFragment extends Fragment implements View.OnClickListener{
 
     private boolean show_address = false, show_personal = false;
-    private TextView tv_address, tv_personal, tv_edita, tv_editp;
+    private TextView tv_address, tv_personal, tv_edita, tv_editp, tv_shoprecords;
     private Button button_logout;
     private int trial = 0;
 
@@ -31,12 +31,14 @@ public class AccountFragment extends Fragment implements View.OnClickListener{
         tv_personal = (TextView) view.findViewById(R.id.textView38);
         tv_edita = (TextView) view.findViewById(R.id.textView39);
         tv_editp = (TextView) view.findViewById(R.id.textView40);
+        tv_shoprecords = (TextView) view.findViewById(R.id.tv_shoprecords);
         button_logout = (Button) view.findViewById(R.id.button5);
 
         tv_address.setOnClickListener(this);
         tv_personal.setOnClickListener(this);
         tv_edita.setOnClickListener(this);
         tv_editp.setOnClickListener(this);
+        tv_shoprecords.setOnClickListener(this);
         button_logout.setOnClickListener(this);
 
         return view;
@@ -79,6 +81,10 @@ public class AccountFragment extends Fragment implements View.OnClickListener{
                     Intent i = new Intent(getActivity(), MainActivity.class);
                     startActivity(i);
                 }
+                break;
+            case (R.id.tv_shoprecords):
+                Intent i = new Intent(getActivity(), ShoppingRecordsActivity.class);
+                startActivity(i);
                 break;
         }
     }

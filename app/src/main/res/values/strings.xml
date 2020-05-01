@@ -2,4 +2,13 @@
     <string name="app_name">SEHH2279 New</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="Detail">Watch Detail</string>
+    <string name="Apple">Malus domestica Fuji Apple</string>
+    <string name="Banana">Taiwan Banana </string>
+    <string name="Cherry">Australian cherries</string>
+    <string name="Durian">Thai Durian</string>
+    <string name="Grape">Italian Grape</string>
+    <string name="Fruit">Fruit</string>
+    <string name="Filter">Filter</string>
+    <string name="Strawberry">Kumamoto Strawberry</string>
 </resources>
