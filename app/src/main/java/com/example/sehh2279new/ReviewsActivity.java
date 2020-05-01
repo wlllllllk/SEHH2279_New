@@ -4,14 +4,15 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class SortFilter extends AppCompatActivity {
+public class ReviewsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sort_filter);
+        setContentView(R.layout.activity_reviews);
 
-        this.setTitle("Sort & Filter");
+        this.setTitle("Reviews");
         getSupportActionBar().setDefaultDisplayHomeAsUpEnabled(true);
+
     }
 }

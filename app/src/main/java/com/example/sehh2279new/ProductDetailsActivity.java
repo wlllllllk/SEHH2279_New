@@ -59,7 +59,8 @@ public class ProductDetailsActivity extends AppCompatActivity implements View.On
                 startActivity(i);
                 break;
             case (R.id.tv_reviews_view_all):
-                Toast.makeText(getApplicationContext(), "View all reviews", Toast.LENGTH_SHORT).show();
+                Intent i2 = new Intent (ProductDetailsActivity.this, ReviewsActivity.class);
+                startActivity(i2);
                 break;
             case (R.id.tv_related_view_all):
                 Toast.makeText(getApplicationContext(), "View all related products", Toast.LENGTH_SHORT).show();
