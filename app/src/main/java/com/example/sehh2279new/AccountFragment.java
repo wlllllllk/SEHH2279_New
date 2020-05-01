@@ -1,9 +1,11 @@
 package com.example.sehh2279new;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -15,6 +17,9 @@ public class AccountFragment extends Fragment implements View.OnClickListener{
 
     private boolean show_address = false, show_personal = false;
     private TextView tv_address, tv_personal, tv_edita, tv_editp;
+    private Button button_logout;
+    private int trial = 0;
+
 
     @Nullable
     @Override
@@ -26,11 +31,13 @@ public class AccountFragment extends Fragment implements View.OnClickListener{
         tv_personal = (TextView) view.findViewById(R.id.textView38);
         tv_edita = (TextView) view.findViewById(R.id.textView39);
         tv_editp = (TextView) view.findViewById(R.id.textView40);
+        button_logout = (Button) view.findViewById(R.id.button5);
 
         tv_address.setOnClickListener(this);
         tv_personal.setOnClickListener(this);
         tv_edita.setOnClickListener(this);
         tv_editp.setOnClickListener(this);
+        button_logout.setOnClickListener(this);
 
         return view;
     }
@@ -62,6 +69,16 @@ public class AccountFragment extends Fragment implements View.OnClickListener{
             case (R.id.textView39):
             case (R.id.textView40):
                 Toast.makeText(getContext(), "Edit not implemented", Toast.LENGTH_SHORT).show();
+                break;
+            case (R.id.button5):
+                trial++;
+                button_logout.setText("PRESS AGAIN TO LOGOUT");
+                button_logout.setBackgroundResource(R.drawable.button_rounded_realred);
+                if (trial == 2 && button_logout.getText().equals("PRESS AGAIN TO LOGOUT")){
+                    Toast.makeText(getContext(), "Logout successfully", Toast.LENGTH_SHORT).show();
+                    Intent i = new Intent(getActivity(), MainActivity.class);
+                    startActivity(i);
+                }
                 break;
         }
     }
