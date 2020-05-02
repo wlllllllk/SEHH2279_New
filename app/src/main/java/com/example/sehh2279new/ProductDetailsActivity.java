@@ -2,6 +2,10 @@ package com.example.sehh2279new;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
+import android.app.ActivityManager;
+import android.content.ComponentName;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -14,7 +18,7 @@ public class ProductDetailsActivity extends AppCompatActivity implements View.On
 
     int amount = 1;
     TextView tv_amount, tv_view_reviews, tv_view_related;
-    LinearLayout related;
+    LinearLayout related1, related2, related3, related4, related5, related6;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,8 +37,18 @@ public class ProductDetailsActivity extends AppCompatActivity implements View.On
         tv_view_reviews.setOnClickListener(this);
         tv_view_related.setOnClickListener(this);
 
-        related = findViewById(R.id.related);
-        related.setOnClickListener(this);
+        related1 = findViewById(R.id.related1);
+        related2 = findViewById(R.id.related2);
+        related3 = findViewById(R.id.related3);
+        related4 = findViewById(R.id.related4);
+        related5 = findViewById(R.id.related5);
+        related6 = findViewById(R.id.related6);
+        related1.setOnClickListener(this);
+        related2.setOnClickListener(this);
+        related3.setOnClickListener(this);
+        related4.setOnClickListener(this);
+        related5.setOnClickListener(this);
+        related6.setOnClickListener(this);
 
         Button button_minus = (Button) findViewById(R.id.button_minus);
         Button button_add = (Button) findViewById(R.id.button_add);
@@ -70,7 +84,12 @@ public class ProductDetailsActivity extends AppCompatActivity implements View.On
             case (R.id.tv_related_view_all):
                 Toast.makeText(getApplicationContext(), "Function not implemented", Toast.LENGTH_SHORT).show();
                 break;
-            case (R.id.related):
+            case (R.id.related1):
+            case (R.id.related2):
+            case (R.id.related3):
+            case (R.id.related4):
+            case (R.id.related5):
+            case (R.id.related6):
                 Intent i3 = new Intent (ProductDetailsActivity.this, ProductDetails2Activity.class);
                 startActivity(i3);
                 break;

@@ -429,6 +429,7 @@
                             android:orientation="horizontal">
 
                             <LinearLayout
+                                android:id="@+id/related11"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
@@ -467,6 +468,7 @@
                             </LinearLayout>
 
                             <LinearLayout
+                                android:id="@+id/related12"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
@@ -506,6 +508,7 @@
                             </LinearLayout>
 
                             <LinearLayout
+                                android:id="@+id/related13"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
@@ -545,6 +548,7 @@
                             </LinearLayout>
 
                             <LinearLayout
+                                android:id="@+id/related14"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
@@ -584,6 +588,7 @@
                             </LinearLayout>
 
                             <LinearLayout
+                                android:id="@+id/related15"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
@@ -623,6 +628,7 @@
                             </LinearLayout>
 
                             <LinearLayout
+                                android:id="@+id/related16"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
