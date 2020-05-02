@@ -10,22 +10,22 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class ProductDetailsActivity extends AppCompatActivity implements View.OnClickListener{
+public class ProductDetails2Activity extends AppCompatActivity implements View.OnClickListener{
 
     int amount = 1;
-    TextView tv_amount, tv_view_reviews, tv_view_related;
+    TextView tv_amount1, tv_view_reviews, tv_view_related;
     LinearLayout related;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_product_details);
+        setContentView(R.layout.activity_product_details2);
 
         this.setTitle("Product Details");
         getSupportActionBar().setDefaultDisplayHomeAsUpEnabled(true);
 
-        tv_amount = (TextView) findViewById(R.id.tv_amount);
-        tv_amount.setText(String.valueOf(amount));
+        tv_amount1 = (TextView) findViewById(R.id.tv_amount1);
+        tv_amount1.setText(String.valueOf(amount));
 
         tv_view_reviews = (TextView) findViewById(R.id.tv_reviews_view_all);
         tv_view_related = (TextView) findViewById(R.id.tv_related_view_all);
@@ -36,43 +36,39 @@ public class ProductDetailsActivity extends AppCompatActivity implements View.On
         related = findViewById(R.id.related);
         related.setOnClickListener(this);
 
-        Button button_minus = (Button) findViewById(R.id.button_minus);
-        Button button_add = (Button) findViewById(R.id.button_add);
-        Button button_add_to_cart = (Button) findViewById(R.id.button_add_to_cart);
+        Button button_minus1 = (Button) findViewById(R.id.button_minus1);
+        Button button_add1 = (Button) findViewById(R.id.button_add1);
+        Button button_add_to_cart1 = (Button) findViewById(R.id.button_add_to_cart1);
 
-        button_minus.setOnClickListener(this);
-        button_add.setOnClickListener(this);
-        button_add_to_cart.setOnClickListener(this);
+        button_minus1.setOnClickListener(this);
+        button_add1.setOnClickListener(this);
+        button_add_to_cart1.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v){
         switch (v.getId()){
-            case (R.id.button_minus):
+            case (R.id.button_minus1):
                 if(amount > 1)
                     amount -= 1;
-                tv_amount.setText(String.valueOf(amount));
+                tv_amount1.setText(String.valueOf(amount));
                 break;
-            case (R.id.button_add):
+            case (R.id.button_add1):
                 amount += 1;
-                tv_amount.setText(String.valueOf(amount));
+                tv_amount1.setText(String.valueOf(amount));
                 break;
-            case (R.id.button_add_to_cart):
+            case (R.id.button_add_to_cart1):
                 Toast.makeText(getApplicationContext(), "Added to cart", Toast.LENGTH_SHORT).show();
-                Intent i = new Intent (ProductDetailsActivity.this, ShopActivityTest.class);
+                Intent i = new Intent (ProductDetails2Activity.this, ShopActivityTest.class);
                 i.putExtra("key",amount);
                 startActivity(i);
                 break;
             case (R.id.tv_reviews_view_all):
-                Intent i2 = new Intent (ProductDetailsActivity.this, ReviewsActivity.class);
+                Intent i2 = new Intent (ProductDetails2Activity.this, ReviewsActivity.class);
                 startActivity(i2);
                 break;
             case (R.id.tv_related_view_all):
                 Toast.makeText(getApplicationContext(), "Function not implemented", Toast.LENGTH_SHORT).show();
-                break;
-            case (R.id.related):
-                Intent i3 = new Intent (ProductDetailsActivity.this, ProductDetails2Activity.class);
-                startActivity(i3);
                 break;
         }
     }
@@ -82,5 +78,4 @@ public class ProductDetailsActivity extends AppCompatActivity implements View.On
         finish();
         return true;
     }
-
 }

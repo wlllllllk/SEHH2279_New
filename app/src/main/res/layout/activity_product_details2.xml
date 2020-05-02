@@ -31,14 +31,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="163dp"
                     android:paddingRight="40dp"
-                    app:srcCompat="@drawable/apple" />
+                    app:srcCompat="@drawable/orange" />
 
                 <TextView
                     android:id="@+id/textView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingTop="10sp"
-                    android:text="Apple"
+                    android:text="Orange"
                     android:textColor="#000000"
                     android:textSize="20sp" />
 
@@ -47,7 +47,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="26dp"
                     android:paddingTop="5sp"
-                    android:text="From Japan"
+                    android:text="From New Zealand"
                     android:textColor="#535353"
                     android:textSize="14sp"
                     android:textStyle="italic" />
@@ -96,6 +96,13 @@
                         android:layout_weight="0"
                         app:srcCompat="@drawable/star_ratings" />
 
+                    <ImageView
+                        android:id="@+id/imageView18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        app:srcCompat="@drawable/star_ratings" />
+
                     <Space
                         android:layout_width="20dp"
                         android:layout_height="wrap_content"
@@ -113,7 +120,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="0"
                         android:paddingTop="10sp"
-                        android:text="$7.7"
+                        android:text="$8.7"
                         android:textColor="#F44336"
                         android:textSize="24sp"
                         android:textStyle="bold" />
@@ -125,7 +132,7 @@
                         android:layout_weight="0"
                         android:foreground="@drawable/strikethrough"
                         android:paddingLeft="10sp"
-                        android:text="$9.9  "
+                        android:text="$10.1  "
                         android:textSize="14sp" />
 
                 </LinearLayout>
@@ -138,7 +145,7 @@
                     android:paddingBottom="10dp">
 
                     <Button
-                        android:id="@+id/button_minus"
+                        android:id="@+id/button_minus1"
                         style="?android:attr/borderlessButtonStyle"
                         android:layout_width="32dp"
                         android:layout_height="wrap_content"
@@ -153,7 +160,7 @@
                         android:layout_weight="1" />
 
                     <TextView
-                        android:id="@+id/tv_amount"
+                        android:id="@+id/tv_amount1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -167,7 +174,7 @@
                         android:layout_weight="1" />
 
                     <Button
-                        android:id="@+id/button_add"
+                        android:id="@+id/button_add1"
                         style="?android:attr/borderlessButtonStyle"
                         android:layout_width="33dp"
                         android:layout_height="65dp"
@@ -182,7 +189,7 @@
                         android:layout_weight="10" />
 
                     <Button
-                        android:id="@+id/button_add_to_cart"
+                        android:id="@+id/button_add_to_cart1"
                         style="@style/Widget.AppCompat.Button"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -220,7 +227,7 @@
                     android:paddingTop="10sp"
                     android:paddingRight="20sp"
                     android:paddingBottom="10sp"
-                    android:text="This apple is very good. Buy this apple la. This apple is very good. Buy this apple la. "
+                    android:text="This is the perfect orange. Buy this orange la."
                     android:textColor="#505050"
                     android:textSize="20sp" />
 
@@ -249,7 +256,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="0"
-                        android:text="   4 "
+                        android:text="   5 "
                         android:textColor="#FF9800"
                         android:textSize="18sp" />
 
@@ -294,7 +301,7 @@
                         android:paddingLeft="15sp"
                         android:paddingTop="10sp"
                         android:paddingRight="20sp"
-                        android:text="Such a nice apple"
+                        android:text="Wonderful Orange"
                         android:textColor="#000000"
                         android:textSize="20sp"
                         android:textStyle="italic" />
@@ -338,7 +345,7 @@
                         android:paddingLeft="15sp"
                         android:paddingTop="10sp"
                         android:paddingRight="20sp"
-                        android:text="This apple is so good"
+                        android:text="Never saw anything like this before"
                         android:textColor="#000000"
                         android:textSize="20sp"
                         android:textStyle="italic" />
@@ -422,7 +429,6 @@
                             android:orientation="horizontal">
 
                             <LinearLayout
-                                android:id="@+id/related"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
@@ -436,7 +442,7 @@
                                     android:layout_height="100dp"
                                     android:layout_weight="1"
                                     android:paddingTop="0dp"
-                                    app:srcCompat="@drawable/orange" />
+                                    app:srcCompat="@drawable/apple" />
 
                                 <TextView
                                     android:id="@+id/textView30"
@@ -444,7 +450,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
                                     android:paddingTop="0dp"
-                                    android:text="Orange"
+                                    android:text="Apple"
                                     android:textColor="#000000"
                                     android:textSize="20sp" />
 
@@ -454,14 +460,13 @@
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
                                     android:paddingTop="0dp"
-                                    android:text="$8.7"
+                                    android:text="$7.7"
                                     android:textColor="#F44336"
                                     android:textSize="24sp"
                                     android:textStyle="bold" />
                             </LinearLayout>
 
                             <LinearLayout
-                                android:id="@+id/related"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
@@ -476,7 +481,7 @@
                                     android:layout_height="100dp"
                                     android:layout_weight="1"
                                     android:paddingTop="0dp"
-                                    app:srcCompat="@drawable/orange" />
+                                    app:srcCompat="@drawable/apple" />
 
                                 <TextView
                                     android:id="@+id/textView31"
@@ -484,7 +489,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
                                     android:paddingTop="0dp"
-                                    android:text="Orange"
+                                    android:text="Apple"
                                     android:textColor="#000000"
                                     android:textSize="20sp" />
 
@@ -494,14 +499,13 @@
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
                                     android:paddingTop="0dp"
-                                    android:text="$8.7"
+                                    android:text="$7.7"
                                     android:textColor="#F44336"
                                     android:textSize="24sp"
                                     android:textStyle="bold" />
                             </LinearLayout>
 
                             <LinearLayout
-                                android:id="@+id/related"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
@@ -516,7 +520,7 @@
                                     android:layout_height="100dp"
                                     android:layout_weight="1"
                                     android:paddingTop="0dp"
-                                    app:srcCompat="@drawable/orange" />
+                                    app:srcCompat="@drawable/apple" />
 
                                 <TextView
                                     android:id="@+id/textView32"
@@ -524,7 +528,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
                                     android:paddingTop="0dp"
-                                    android:text="Orange"
+                                    android:text="Apple"
                                     android:textColor="#000000"
                                     android:textSize="20sp" />
 
@@ -534,14 +538,13 @@
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
                                     android:paddingTop="0dp"
-                                    android:text="$8.7"
+                                    android:text="$7.7"
                                     android:textColor="#F44336"
                                     android:textSize="24sp"
                                     android:textStyle="bold" />
                             </LinearLayout>
 
                             <LinearLayout
-                                android:id="@+id/related"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
@@ -556,7 +559,7 @@
                                     android:layout_height="100dp"
                                     android:layout_weight="1"
                                     android:paddingTop="0dp"
-                                    app:srcCompat="@drawable/orange" />
+                                    app:srcCompat="@drawable/apple" />
 
                                 <TextView
                                     android:id="@+id/textView33"
@@ -564,7 +567,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
                                     android:paddingTop="0dp"
-                                    android:text="Orange"
+                                    android:text="Apple"
                                     android:textColor="#000000"
                                     android:textSize="20sp" />
 
@@ -574,14 +577,13 @@
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
                                     android:paddingTop="0dp"
-                                    android:text="$8.7"
+                                    android:text="$7.7"
                                     android:textColor="#F44336"
                                     android:textSize="24sp"
                                     android:textStyle="bold" />
                             </LinearLayout>
 
                             <LinearLayout
-                                android:id="@+id/related"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
@@ -596,7 +598,7 @@
                                     android:layout_height="100dp"
                                     android:layout_weight="1"
                                     android:paddingTop="0dp"
-                                    app:srcCompat="@drawable/orange" />
+                                    app:srcCompat="@drawable/apple" />
 
                                 <TextView
                                     android:id="@+id/textView34"
@@ -604,7 +606,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
                                     android:paddingTop="0dp"
-                                    android:text="Orange"
+                                    android:text="Apple"
                                     android:textColor="#000000"
                                     android:textSize="20sp" />
 
@@ -614,14 +616,13 @@
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
                                     android:paddingTop="0dp"
-                                    android:text="$8.7"
+                                    android:text="$7.7"
                                     android:textColor="#F44336"
                                     android:textSize="24sp"
                                     android:textStyle="bold" />
                             </LinearLayout>
 
                             <LinearLayout
-                                android:id="@+id/related"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
@@ -635,7 +636,7 @@
                                     android:layout_height="100dp"
                                     android:layout_weight="1"
                                     android:paddingTop="0dp"
-                                    app:srcCompat="@drawable/orange" />
+                                    app:srcCompat="@drawable/apple" />
 
                                 <TextView
                                     android:id="@+id/textView35"
@@ -643,7 +644,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
                                     android:paddingTop="0dp"
-                                    android:text="Orange"
+                                    android:text="Apple"
                                     android:textColor="#000000"
                                     android:textSize="20sp" />
 
@@ -653,7 +654,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
                                     android:paddingTop="0dp"
-                                    android:text="$8.7"
+                                    android:text="$7.7"
                                     android:textColor="#F44336"
                                     android:textSize="24sp"
                                     android:textStyle="bold" />
