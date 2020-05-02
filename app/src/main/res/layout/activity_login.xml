@@ -113,6 +113,21 @@
                 android:text="Sign Up here!"
                 android:textAlignment="center" />
 
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="52dp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <ProgressBar
+                android:id="@+id/progressBar3"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+
         </LinearLayout>
 
         <Space
