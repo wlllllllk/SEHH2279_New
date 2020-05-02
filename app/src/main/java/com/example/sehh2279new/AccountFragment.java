@@ -16,7 +16,7 @@ import androidx.fragment.app.Fragment;
 public class AccountFragment extends Fragment implements View.OnClickListener{
 
     private boolean show_address = false, show_personal = false;
-    private TextView tv_address, tv_personal, tv_edita, tv_editp, tv_shoprecords;
+    private TextView tv_address, tv_personal, tv_edita, tv_editp, tv_shoprecords, tv_member;
     private Button button_logout;
     private int trial = 0;
 
@@ -32,6 +32,8 @@ public class AccountFragment extends Fragment implements View.OnClickListener{
         tv_edita = (TextView) view.findViewById(R.id.textView39);
         tv_editp = (TextView) view.findViewById(R.id.textView40);
         tv_shoprecords = (TextView) view.findViewById(R.id.tv_shoprecords);
+        tv_member = (TextView) view.findViewById(R.id.tv_member);
+
         button_logout = (Button) view.findViewById(R.id.button5);
 
         tv_address.setOnClickListener(this);
@@ -39,6 +41,8 @@ public class AccountFragment extends Fragment implements View.OnClickListener{
         tv_edita.setOnClickListener(this);
         tv_editp.setOnClickListener(this);
         tv_shoprecords.setOnClickListener(this);
+        tv_member.setOnClickListener(this);
+
         button_logout.setOnClickListener(this);
 
         return view;
@@ -68,9 +72,10 @@ public class AccountFragment extends Fragment implements View.OnClickListener{
                     show_personal = false;
                 }
                 break;
+            case (R.id.tv_member):
             case (R.id.textView39):
             case (R.id.textView40):
-                Toast.makeText(getContext(), "Edit not implemented", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(), "Function not implemented", Toast.LENGTH_SHORT).show();
                 break;
             case (R.id.button5):
                 trial++;
