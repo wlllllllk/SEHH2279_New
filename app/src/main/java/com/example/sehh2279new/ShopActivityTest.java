@@ -21,7 +21,7 @@ public class ShopActivityTest extends AppCompatActivity {
         setContentView(R.layout.shoppingcart);
 
         this.setTitle("Shopping Cart");
-        getSupportActionBar().setDefaultDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         TextView quantitytext = findViewById(R.id.textView20);
         TextView pricetext = findViewById(R.id.textView25);

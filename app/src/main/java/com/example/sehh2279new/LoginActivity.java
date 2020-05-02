@@ -20,7 +20,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         setContentView(R.layout.activity_login);
 
         this.setTitle("Login");
-        getSupportActionBar().setDefaultDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         tv_signup = findViewById(R.id.tv_signup);
         button_login = findViewById(R.id.button_login);

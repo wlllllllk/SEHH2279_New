@@ -15,7 +15,7 @@ public class ShoppingRecordsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_shopping_records);
 
         this.setTitle("Shopping Records");
-        getSupportActionBar().setDefaultDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
     }
 

@@ -26,7 +26,7 @@ public class ProductDetailsActivity extends AppCompatActivity implements View.On
         setContentView(R.layout.activity_product_details);
 
         this.setTitle("Product Details");
-        getSupportActionBar().setDefaultDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         tv_amount = (TextView) findViewById(R.id.tv_amount);
         tv_amount.setText(String.valueOf(amount));

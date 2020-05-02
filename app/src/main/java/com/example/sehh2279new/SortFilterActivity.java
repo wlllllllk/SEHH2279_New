@@ -12,7 +12,7 @@ public class SortFilterActivity extends AppCompatActivity {
         setContentView(R.layout.activity_sort_filter);
 
         this.setTitle("Sort & Filter");
-        getSupportActionBar().setDefaultDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     @Override

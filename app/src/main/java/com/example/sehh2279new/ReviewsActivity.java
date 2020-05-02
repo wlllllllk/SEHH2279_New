@@ -12,7 +12,7 @@ public class ReviewsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_reviews);
 
         this.setTitle("Reviews");
-        getSupportActionBar().setDefaultDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     @Override

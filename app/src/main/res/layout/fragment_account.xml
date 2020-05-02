@@ -55,12 +55,15 @@
                 </LinearLayout>
             </LinearLayout>
 
-            <View
-                android:id="@+id/view5"
+            <TextView
+                android:id="@+id/textView44"
                 android:layout_width="match_parent"
-                android:layout_height="1dp"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:background="@android:color/darker_gray" />
+                android:paddingLeft="15sp"
+                android:paddingTop="10sp"
+                android:text="Shopping Information"
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/tv_member"
@@ -99,6 +102,20 @@
                 android:layout_height="1dp"
                 android:layout_weight="1"
                 android:background="@android:color/darker_gray" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/textView43"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="15sp"
+                android:text="Personal Information"
+                android:textSize="18sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -161,7 +178,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:paddingLeft="20sp"
-                    android:text="Personal Information"
+                    android:text="Contact Information"
                     android:textAlignment="textStart"
                     android:textColor="#000000"
                     android:textSize="20sp" />
@@ -197,40 +214,56 @@
                 android:background="@android:color/darker_gray" />
 
 
-            <LinearLayout
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/textView46"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:paddingTop="15dp">
+                android:layout_weight="1"
+                android:paddingLeft="15sp"
+                android:text="Others"
+                android:textSize="18sp" />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp">
 
-                    <TextView
-                        android:id="@+id/textView9"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
-                        android:paddingLeft="20sp"
-                        android:text="Points"
-                        android:textAlignment="center"
-                        android:textColor="#000000"
-                        android:textSize="20sp" />
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="20sp"
+                    android:text="Points"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
 
-                    <TextView
-                        android:id="@+id/textView10"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
-                        android:paddingLeft="20sp"
-                        android:text="101"
-                        android:textAlignment="center"
-                        android:textSize="18sp" />
-                </LinearLayout>
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="20sp"
+                    android:text="101"
+                    android:textAlignment="center"
+                    android:textSize="18sp" />
 
             </LinearLayout>
+
+            <View
+                android:id="@+id/view8"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="@android:color/darker_gray" />
 
             <Space
                 android:layout_width="match_parent"
