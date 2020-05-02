@@ -68,6 +68,15 @@ public class HomeFragment extends Fragment {
                 startActivity(i);
 
             }
+        });Button button10 = (Button) view.findViewById(R.id.button10);
+        button10.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+
+                Intent i = new Intent(getActivity(), LoginActivity.class);
+                startActivity(i);
+
+            }
         });
 
         return view;
