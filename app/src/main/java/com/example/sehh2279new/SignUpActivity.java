@@ -55,7 +55,7 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
         passwordEditText = findViewById(R.id.edit_signup_pw);
         signUpButton = findViewById(R.id.button_login);
         loginTextView = findViewById(R.id.login);
-        progressBar = findViewById(R.id.progressBar3);
+        progressBar = findViewById(R.id.progressBar);
         mAuth = FirebaseAuth.getInstance();
         signUpButton.setOnClickListener(this);
         loginTextView.setOnClickListener(this);
@@ -101,18 +101,15 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         progressBar.setVisibility(View.GONE);
                         if (task.isSuccessful()) {
-                            Toast.makeText(getApplicationContext(), "You have registered!",
-                                    Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), "You have registered!", Toast.LENGTH_SHORT).show();
                             FirebaseUser user = mAuth.getCurrentUser();
-                            Intent intent = new Intent(getApplicationContext(),
-                                    LoginActivity.class);
+                            Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
                             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                             startActivity(intent);
                         } else {
                             if(task.getException() instanceof
                                     FirebaseAuthUserCollisionException){
-                                Toast.makeText(getApplicationContext(), "User already Registered.",
-                                        Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "User already Registered.", Toast.LENGTH_SHORT).show();
                             } else {
                                 Toast.makeText(getApplicationContext(),
                                         task.getException().getMessage(),
