@@ -124,12 +124,12 @@
                             android:textSize="20sp" />
 
                         <EditText
-                            android:id="@+id/editText7"
+                            android:id="@+id/editText"
                             android:layout_width="match_parent"
-                            android:layout_height="50dp"
-                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
                             android:ems="10"
-                            android:inputType="textPassword" />
+                            android:inputType="textEmailAddress" />
+
                     </LinearLayout>
 
                     <Space
@@ -176,11 +176,11 @@
                             android:textSize="20sp" />
 
                         <EditText
-                            android:id="@+id/editText6"
+                            android:id="@+id/editText2"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:ems="10"
-                            android:inputType="number" />
+                            android:inputType="textPostalAddress" />
 
                     </LinearLayout>
 
