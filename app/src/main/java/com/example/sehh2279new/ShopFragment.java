@@ -98,7 +98,7 @@ public class ShopFragment extends Fragment implements View.OnClickListener{
                 Intent i4 = new Intent(getContext(), ShoppingcartActivity.class);
                 startActivity(i4);
                 break;
-
+//d
         }
     }
 }
