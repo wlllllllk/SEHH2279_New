@@ -15,8 +15,8 @@ public class ShoppingcartActivity extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.shoppingcart);
-        TextView quantitytext = findViewById(R.id.textView20);
-        TextView pricetext = findViewById(R.id.textView25);
+       // TextView quantitytext = findViewById(R.id.textView20);
+        //TextView pricetext = findViewById(R.id.textView25);
        //Bundle extras = getIntent().getExtras();
         //String value = extras.getString("key");
         //int quantity = Integer.parseInt(value);

@@ -73,7 +73,7 @@ public class ProductDetails2Activity extends AppCompatActivity implements View.O
             case (R.id.button_add_to_cart1):
                 Toast.makeText(getApplicationContext(), "Added to cart", Toast.LENGTH_SHORT).show();
                 Intent i = new Intent (ProductDetails2Activity.this, ShopActivityTest.class);
-                i.putExtra("key", amount);
+                //i.putExtra("key", amount);
                 startActivity(i);
                 break;
             case (R.id.tv_reviews_view_all):
