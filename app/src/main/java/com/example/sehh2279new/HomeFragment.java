@@ -28,6 +28,14 @@ public class HomeFragment extends Fragment {
                 Toast.makeText(getContext(), "Function not implemented", Toast.LENGTH_SHORT).show();
             }
         });
+
+        LinearLayout home2 = view.findViewById(R.id.home2);
+        home2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getContext(), "Function not implemented", Toast.LENGTH_SHORT).show();
+            }
+        });
         return view;
     }
 
