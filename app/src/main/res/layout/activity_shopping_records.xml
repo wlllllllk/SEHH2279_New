@@ -23,20 +23,13 @@
                     android:layout_height="match_parent"
                     android:orientation="horizontal">
 
-                    <ImageView
-                        android:id="@+id/Durianmage"
-                        android:layout_width="50dp"
-                        android:layout_height="72dp"
-                        android:layout_weight="1"
-                        android:contentDescription="@string/Durian"
-                        app:srcCompat="@drawable/durian" />
-
                     <TextView
-                        android:id="@+id/Duriantext1"
-                        android:layout_width="100dp"
+                        android:id="@+id/Ordertext1"
+                        android:layout_width="239dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:text="@string/Durian" />
+                        android:text="Order number: 123456789                           Status: Processing"
+                        android:textSize="20sp" />
 
                     <Button
                         android:id="@+id/button4"
@@ -63,7 +56,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Amount : 1" />
+                        android:text="Price: $100" />
                 </LinearLayout>
 
             </LinearLayout>
@@ -82,20 +75,13 @@
                     android:layout_height="match_parent"
                     android:orientation="horizontal">
 
-                    <ImageView
-                        android:id="@+id/Cherrymage"
-                        android:layout_width="50dp"
-                        android:layout_height="72dp"
-                        android:layout_weight="1"
-                        android:contentDescription="@string/Cherry"
-                        app:srcCompat="@drawable/cherry" />
-
                     <TextView
-                        android:id="@+id/Cherrytext"
-                        android:layout_width="100dp"
+                        android:id="@+id/Ordertext2"
+                        android:layout_width="240dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:text="@string/Cherry" />
+                        android:text="Order number: 987654321                           Status: Finish"
+                        android:textSize="20sp" />
 
                     <Button
                         android:id="@+id/button3"
@@ -123,7 +109,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Amount : 2" />
+                        android:text="Price: $52" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -141,20 +127,13 @@
                     android:layout_height="72dp"
                     android:orientation="horizontal">
 
-                    <ImageView
-                        android:id="@+id/Appleimage"
-                        android:layout_width="50dp"
-                        android:layout_height="72dp"
-                        android:layout_weight="1"
-                        android:contentDescription="@string/Apple"
-                        app:srcCompat="@drawable/apple" />
-
                     <TextView
-                        android:id="@+id/Appletext"
-                        android:layout_width="100dp"
+                        android:id="@+id/Ordertext3"
+                        android:layout_width="240dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:text="@string/Apple" />
+                        android:text="Order number: 111111111                           Status: Finish"
+                        android:textSize="20sp" />
 
                     <Button
                         android:id="@+id/button1"
@@ -182,7 +161,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Amount : 5" />
+                        android:text="Price : $75" />
                 </LinearLayout>
 
             </LinearLayout>
@@ -201,20 +180,13 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <ImageView
-                        android:id="@+id/Durianmage1"
-                        android:layout_width="50dp"
-                        android:layout_height="72dp"
-                        android:layout_weight="1"
-                        android:contentDescription="@string/Durian"
-                        app:srcCompat="@drawable/durian" />
-
                     <TextView
-                        android:id="@+id/Duriantext2"
-                        android:layout_width="100dp"
+                        android:id="@+id/Ordertext4"
+                        android:layout_width="236dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:text="@string/Durian" />
+                        android:text="Order number: 999999999                           Status: Finish"
+                        android:textSize="20sp" />
 
                     <Button
                         android:id="@+id/button5"
@@ -244,184 +216,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Amount : 2" />
+                        android:text="Price : $260" />
                 </LinearLayout>
 
-            </LinearLayout>
-
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="30dp" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:id="@+id/Bananamage"
-                        android:layout_width="50dp"
-                        android:layout_height="72dp"
-                        android:layout_weight="1"
-                        app:srcCompat="@drawable/banana" />
-
-                    <TextView
-                        android:id="@+id/Bananatext"
-                        android:layout_width="100dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:text="@string/Banana" />
-
-                    <Button
-                        android:id="@+id/button2"
-                        android:layout_width="10dp"
-                        android:layout_height="72dp"
-                        android:layout_weight="1"
-                        android:background="@color/colorButton"
-                        android:text="@string/Detail" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/textView13"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="Date : 16-6-2019" />
-
-                    <TextView
-                        android:id="@+id/textView14"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="Amount : 3" />
-                </LinearLayout>
-            </LinearLayout>
-
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="30dp" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:id="@+id/Banana1mage"
-                        android:layout_width="50dp"
-                        android:layout_height="72dp"
-                        android:layout_weight="1"
-                        app:srcCompat="@drawable/banana" />
-
-                    <TextView
-                        android:id="@+id/Banana1text"
-                        android:layout_width="100dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:text="@string/Banana" />
-
-                    <Button
-                        android:id="@+id/button6"
-                        android:layout_width="10dp"
-                        android:layout_height="72dp"
-                        android:layout_weight="1"
-                        android:background="@color/colorButton"
-                        android:text="@string/Detail" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/textView15"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="Date : 11-5-2019" />
-
-                    <TextView
-                        android:id="@+id/textView16"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="Amount : 1" />
-                </LinearLayout>
-
-            </LinearLayout>
-
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="30dp" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:id="@+id/Strawberrymage"
-                        android:layout_width="50dp"
-                        android:layout_height="72dp"
-                        android:layout_weight="1"
-                        app:srcCompat="@drawable/strawberry" />
-
-                    <TextView
-                        android:id="@+id/Strawberrytext"
-                        android:layout_width="100dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:text="@string/Strawberry" />
-
-                    <Button
-                        android:id="@+id/button7"
-                        android:layout_width="10dp"
-                        android:layout_height="72dp"
-                        android:layout_weight="1"
-                        android:background="@color/colorButton"
-                        android:text="@string/Detail" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/textView17"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="Date : 1-5-2019" />
-
-                    <TextView
-                        android:id="@+id/textView18"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="Amount : 5" />
-                </LinearLayout>
             </LinearLayout>
 
         </LinearLayout>
