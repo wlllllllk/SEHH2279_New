@@ -14,12 +14,37 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <SearchView
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="#8BC34A"
-                android:hapticFeedbackEnabled="false"
-                android:queryHint="Search for products" />
+                android:orientation="horizontal"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp">
+
+                <SearchView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                </SearchView>
+
+                <Button
+                    android:id="@+id/button_sortfilter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:background="#009688"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="Sort &amp; Filter"
+                    android:textColor="#FFFFFF" />
+
+                <Space
+                    android:layout_width="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0" />
+
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -49,6 +74,7 @@
                             android:orientation="horizontal">
 
                             <LinearLayout
+                                android:id="@+id/p1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
@@ -75,7 +101,7 @@
                                         android:textSize="18sp" />
 
                                     <ImageView
-                                        android:id="@+id/imageView22"
+                                        android:id="@+id/add1"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_weight="0"
@@ -126,13 +152,14 @@
                                 android:orientation="horizontal">
 
                                 <LinearLayout
+                                    android:id="@+id/p2"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
                                     android:orientation="vertical">
 
                                     <ImageView
-                                        android:id="@+id/imageView20"
+                                        android:id="@+id/imageView201"
                                         android:layout_width="150dp"
                                         android:layout_height="150dp"
                                         app:srcCompat="@drawable/apple" />
@@ -143,7 +170,7 @@
                                         android:orientation="horizontal">
 
                                         <TextView
-                                            android:id="@+id/textView66"
+                                            android:id="@+id/textView661"
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:paddingRight="80sp"
@@ -152,7 +179,7 @@
                                             android:textSize="18sp" />
 
                                         <ImageView
-                                            android:id="@+id/imageView22"
+                                            android:id="@+id/add2"
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:layout_weight="0"
@@ -160,26 +187,26 @@
                                     </LinearLayout>
 
                                     <TextView
-                                        android:id="@+id/textView67"
+                                        android:id="@+id/textView671"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:text="Sold 10000+" />
 
                                     <TextView
-                                        android:id="@+id/textView68"
+                                        android:id="@+id/textView681"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:text="★★★★" />
 
                                     <TextView
-                                        android:id="@+id/textView69"
+                                        android:id="@+id/textView691"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:foreground="@drawable/strikethrough"
                                         android:text="$9.9" />
 
                                     <TextView
-                                        android:id="@+id/textView70"
+                                        android:id="@+id/textView701"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:text="$7.7"
@@ -204,13 +231,14 @@
                             android:orientation="horizontal">
 
                             <LinearLayout
+                                android:id="@+id/p3"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:orientation="vertical">
 
                                 <ImageView
-                                    android:id="@+id/imageView20"
+                                    android:id="@+id/imageView202"
                                     android:layout_width="150dp"
                                     android:layout_height="150dp"
                                     app:srcCompat="@drawable/apple" />
@@ -221,7 +249,7 @@
                                     android:orientation="horizontal">
 
                                     <TextView
-                                        android:id="@+id/textView66"
+                                        android:id="@+id/textView662"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:paddingRight="80sp"
@@ -230,7 +258,7 @@
                                         android:textSize="18sp" />
 
                                     <ImageView
-                                        android:id="@+id/imageView22"
+                                        android:id="@+id/add3"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_weight="0"
@@ -238,26 +266,26 @@
                                 </LinearLayout>
 
                                 <TextView
-                                    android:id="@+id/textView67"
+                                    android:id="@+id/textView672"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:text="Sold 10000+" />
 
                                 <TextView
-                                    android:id="@+id/textView68"
+                                    android:id="@+id/textView682"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:text="★★★★" />
 
                                 <TextView
-                                    android:id="@+id/textView69"
+                                    android:id="@+id/textView692"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:foreground="@drawable/strikethrough"
                                     android:text="$9.9" />
 
                                 <TextView
-                                    android:id="@+id/textView70"
+                                    android:id="@+id/textView702"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:text="$7.7"
@@ -281,13 +309,14 @@
                                 android:orientation="horizontal">
 
                                 <LinearLayout
+                                    android:id="@+id/p4"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
                                     android:orientation="vertical">
 
                                     <ImageView
-                                        android:id="@+id/imageView20"
+                                        android:id="@+id/imageView203"
                                         android:layout_width="150dp"
                                         android:layout_height="150dp"
                                         app:srcCompat="@drawable/apple" />
@@ -298,7 +327,7 @@
                                         android:orientation="horizontal">
 
                                         <TextView
-                                            android:id="@+id/textView66"
+                                            android:id="@+id/textView663"
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:paddingRight="80sp"
@@ -307,7 +336,7 @@
                                             android:textSize="18sp" />
 
                                         <ImageView
-                                            android:id="@+id/imageView22"
+                                            android:id="@+id/add4"
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:layout_weight="0"
@@ -315,26 +344,26 @@
                                     </LinearLayout>
 
                                     <TextView
-                                        android:id="@+id/textView67"
+                                        android:id="@+id/textView673"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:text="Sold 10000+" />
 
                                     <TextView
-                                        android:id="@+id/textView68"
+                                        android:id="@+id/textView683"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:text="★★★★" />
 
                                     <TextView
-                                        android:id="@+id/textView69"
+                                        android:id="@+id/textView693"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:foreground="@drawable/strikethrough"
                                         android:text="$9.9" />
 
                                     <TextView
-                                        android:id="@+id/textView70"
+                                        android:id="@+id/textView703"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:text="$7.7"
@@ -359,13 +388,14 @@
                             android:orientation="horizontal">
 
                             <LinearLayout
+                                android:id="@+id/p5"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:orientation="vertical">
 
                                 <ImageView
-                                    android:id="@+id/imageView20"
+                                    android:id="@+id/imageView204"
                                     android:layout_width="150dp"
                                     android:layout_height="150dp"
                                     app:srcCompat="@drawable/apple" />
@@ -376,7 +406,7 @@
                                     android:orientation="horizontal">
 
                                     <TextView
-                                        android:id="@+id/textView66"
+                                        android:id="@+id/textView664"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:paddingRight="80sp"
@@ -385,7 +415,7 @@
                                         android:textSize="18sp" />
 
                                     <ImageView
-                                        android:id="@+id/imageView22"
+                                        android:id="@+id/add5"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_weight="0"
@@ -393,26 +423,26 @@
                                 </LinearLayout>
 
                                 <TextView
-                                    android:id="@+id/textView67"
+                                    android:id="@+id/textView674"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:text="Sold 10000+" />
 
                                 <TextView
-                                    android:id="@+id/textView68"
+                                    android:id="@+id/textView684"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:text="★★★★" />
 
                                 <TextView
-                                    android:id="@+id/textView69"
+                                    android:id="@+id/textView694"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:foreground="@drawable/strikethrough"
                                     android:text="$9.9" />
 
                                 <TextView
-                                    android:id="@+id/textView70"
+                                    android:id="@+id/textView704"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:text="$7.7"
@@ -436,13 +466,14 @@
                                 android:orientation="horizontal">
 
                                 <LinearLayout
+                                    android:id="@+id/p6"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
                                     android:orientation="vertical">
 
                                     <ImageView
-                                        android:id="@+id/imageView20"
+                                        android:id="@+id/imageView205"
                                         android:layout_width="150dp"
                                         android:layout_height="150dp"
                                         app:srcCompat="@drawable/apple" />
@@ -453,7 +484,7 @@
                                         android:orientation="horizontal">
 
                                         <TextView
-                                            android:id="@+id/textView66"
+                                            android:id="@+id/textView665"
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:paddingRight="80sp"
@@ -462,7 +493,7 @@
                                             android:textSize="18sp" />
 
                                         <ImageView
-                                            android:id="@+id/imageView22"
+                                            android:id="@+id/add6"
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:layout_weight="0"
@@ -470,26 +501,26 @@
                                     </LinearLayout>
 
                                     <TextView
-                                        android:id="@+id/textView67"
+                                        android:id="@+id/textView675"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:text="Sold 10000+" />
 
                                     <TextView
-                                        android:id="@+id/textView68"
+                                        android:id="@+id/textView685"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:text="★★★★" />
 
                                     <TextView
-                                        android:id="@+id/textView69"
+                                        android:id="@+id/textView695"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:foreground="@drawable/strikethrough"
                                         android:text="$9.9" />
 
                                     <TextView
-                                        android:id="@+id/textView70"
+                                        android:id="@+id/textView705"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:text="$7.7"
