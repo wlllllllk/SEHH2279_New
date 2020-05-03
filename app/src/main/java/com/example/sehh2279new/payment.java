@@ -17,16 +17,18 @@ public class payment extends AppCompatActivity {
         setContentView(R.layout.payment);
 
         this.setTitle("Checkout");
-        getSupportActionBar().setDefaultDisplayHomeAsUpEnabled(true);
-
-        TextView quantitytext2 = findViewById(R.id.textView3);
-        TextView pricetext2 = findViewById(R.id.textView5);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         Button confirm = findViewById(R.id.button);
+        /*TextView quantitytext2 = findViewById(R.id.textView86);
+        TextView pricetext2 = findViewById(R.id.textView84);
+        TextView totaltext2 = findViewById(R.id.textView92);
         Bundle extras = getIntent().getExtras();
         String value = extras.getString("key1");
         quantitytext2.setText(value);
         String price = extras.getString("key2");
         pricetext2.setText(price);
+        String total = extras.getString("key3");
+        totaltext2.setText("$ "+total);*/
         confirm.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){

@@ -13,6 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class ShopActivityTest extends AppCompatActivity {
         private int value;
         private double price;
+        private double totalprice;
 
 
     @Override
@@ -22,30 +23,34 @@ public class ShopActivityTest extends AppCompatActivity {
 
         this.setTitle("Shopping Cart");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
-        TextView quantitytext = findViewById(R.id.textView20);
-        TextView pricetext = findViewById(R.id.textView25);
         Button checkout = findViewById(R.id.button5);
+
+        /*TextView quantitytext = findViewById(R.id.textView20);
+        TextView pricetext = findViewById(R.id.textView25);
+        TextView total = findViewById(R.id.textView91);
+
         Button delete = findViewById(R.id.button7);
         Bundle extras = getIntent().getExtras();
         value = extras.getInt("key");
         quantitytext.setText(Integer.toString(value));
         price = 7.7 * value;
-        pricetext.setText(Double.toString(price));
-
+        pricetext.setText("$ "+Double.toString(price));
+        totalprice = price+26.1;
+        total.setText("$ "+Double.toString(totalprice));*/
         checkout.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
 
                 Intent i = new Intent(ShopActivityTest.this,payment.class);
-                i.putExtra("key1",Integer.toString(value));
+                /*i.putExtra("key1",Integer.toString(value));
                 i.putExtra("key2",Double.toString(price));
+                i.putExtra("key3",Double.toString(totalprice));*/
                 startActivity(i);
 
             }
         });
 
-        delete.setOnClickListener(new View.OnClickListener(){
+        /*delete.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
                 ImageView apple = findViewById(R.id.imageView2);
@@ -68,6 +73,6 @@ public class ShopActivityTest extends AppCompatActivity {
                 divider.setVisibility(View.GONE);
 
             }
-        });
+        });*/
     }
 }
