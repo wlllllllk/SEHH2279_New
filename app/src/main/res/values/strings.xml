@@ -36,7 +36,7 @@
     <string-array name="subcategory">
         <item>Any</item>
         <item>Fruit</item>
-        <item>Vegetables</item>
+        <item>Vegetable</item>
         <item>Groceries</item>
         <item>Meat</item>
         <item>Snacks</item>
