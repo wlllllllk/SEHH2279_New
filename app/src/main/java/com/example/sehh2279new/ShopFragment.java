@@ -69,7 +69,7 @@ public class ShopFragment extends Fragment implements View.OnClickListener{
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.button_sortfilter:
-                Intent i = new Intent(getContext(), SortFilterActivity.class);
+                Intent i = new Intent(getContext(), FilterActivity.class);
                 startActivity(i);
                 break;
             case R.id.p1:
