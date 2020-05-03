@@ -9,21 +9,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".FilterActivity"></activity>
+        <activity android:name=".ShoppingRecordsDetailsActivitty"></activity>
+        <activity android:name=".ShoppingRecordsDetailActivity" />
         <activity android:name=".ProductDetails2Activity" />
         <activity
             android:name=".SignUpActivity"
             android:parentActivityName=".LoginActivity" />
         <activity
             android:name=".LoginActivity"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity android:name=".SortFilterActivity" />
         <activity
             android:name=".ReviewsActivity"
@@ -39,8 +39,7 @@
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".MainActivity"
-            android:theme="@style/AppTheme.NoActionBar"/>
-
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ShopActivityTest"
             android:parentActivityName=".MainActivity" />

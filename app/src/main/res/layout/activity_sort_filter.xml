@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SortFilter">
+    tools:context=".SortFilterActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -12,275 +12,195 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:layout_weight="1"
+                android:orientation="vertical">
 
-                <SearchView
-                    android:id="@+id/searchView"
-                    android:layout_width="302dp"
-                    android:layout_height="50dp">
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
 
-                </SearchView>
+                <TextView
+                    android:id="@+id/textView_special_offer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Special Offer" />
 
-                <Button
-                    android:id="@+id/button"
-                    android:layout_width="106dp"
+                <Spinner
+                    android:id="@+id/spinner_special_offer"
+                    android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:text="@string/Filter"
-                    android:textSize="12sp" />
+                    android:entries="@array/specialoffer" />
 
-            </LinearLayout>
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/textView_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Type" />
+
+                <Spinner
+                    android:id="@+id/spinner_category"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:entries="@array/Type" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" />
+
+                <TextView
+                    android:id="@+id/textView_country"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Country" />
+
+                <Spinner
+                    android:id="@+id/spinner_country"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:entries="@array/Country" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" />
+
+                <TextView
+                    android:id="@+id/textView_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Price" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/editText_lower"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="number" />
+
+                    <TextView
+                        android:id="@+id/textView_to"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="To" />
+
+                    <EditText
+                        android:id="@+id/editText_upper"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="number" />
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_weight="1" />
 
                 <TextView
                     android:id="@+id/textView2"
-                    android:layout_width="60dp"
-                    android:layout_height="40dp"
-                    android:text="@string/Fruit"
-                    android:textSize="25sp" />
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sort by"
+                    android:textSize="15sp" />
 
-                <Button
-                    android:id="@+id/button9"
-                    android:layout_width="60dp"
-                    android:layout_height="40dp"
-                    android:layout_weight="1"
-                    android:text="Letter (A-Z)" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
 
-                <Button
-                    android:id="@+id/button12"
-                    android:layout_width="60dp"
-                    android:layout_height="40dp"
-                    android:layout_weight="1"
-                    android:text="Price" />
+                    <Button
+                        android:id="@+id/letter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Letter (A - Z)" />
 
-                <Button
-                    android:id="@+id/button13"
-                    android:layout_width="60dp"
-                    android:layout_height="40dp"
-                    android:layout_weight="1"
-                    android:text="Like" />
+                    <Button
+                        android:id="@+id/price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Price (High - Low)" />
+
+                    <Button
+                        android:id="@+id/button13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Like" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/reset"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#616578"
+                        android:text="Reset"
+                        android:textColor="#FFFFFF" />
+
+                    <Space
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0" />
+
+                    <Button
+                        android:id="@+id/apply"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#009688"
+                        android:text="Apply"
+                        android:textColor="#FFFFFF" />
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_weight="1" />
 
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
+            <Space
+                android:layout_width="30dp"
                 android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:layout_weight="1" />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="100dp"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:id="@+id/Appleimage"
-                        android:layout_width="50dp"
-                        android:layout_height="72dp"
-                        android:layout_weight="1"
-                        android:contentDescription="@string/Apple"
-                        app:srcCompat="@drawable/apple" />
-
-                    <TextView
-                        android:id="@+id/Appletext"
-                        android:layout_width="100dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:text="@string/Apple" />
-
-                    <Button
-                        android:id="@+id/button1"
-                        android:layout_width="10dp"
-                        android:layout_height="72dp"
-                        android:layout_weight="1"
-                        android:background="@color/colorButton"
-                        android:text="@string/Detail" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="100dp"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:id="@+id/Bananamage"
-                        android:layout_width="50dp"
-                        android:layout_height="72dp"
-                        android:layout_weight="1"
-                        android:contentDescription="@string/Apple"
-                        app:srcCompat="@drawable/banana" />
-
-                    <TextView
-                        android:id="@+id/Bananatext"
-                        android:layout_width="100dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:text="@string/Banana" />
-
-                    <Button
-                        android:id="@+id/button2"
-                        android:layout_width="10dp"
-                        android:layout_height="72dp"
-                        android:layout_weight="1"
-                        android:background="@color/colorButton"
-                        android:text="@string/Detail" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="100dp"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:id="@+id/Cherrymage"
-                        android:layout_width="50dp"
-                        android:layout_height="72dp"
-                        android:layout_weight="1"
-                        android:contentDescription="@string/Cherry"
-                        app:srcCompat="@drawable/cherry" />
-
-                    <TextView
-                        android:id="@+id/Cherrytext"
-                        android:layout_width="100dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:text="@string/Cherry" />
-
-                    <Button
-                        android:id="@+id/button3"
-                        android:layout_width="10dp"
-                        android:layout_height="72dp"
-                        android:layout_weight="1"
-                        android:background="@color/colorButton"
-                        android:text="@string/Detail" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="100dp"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:id="@+id/Durianmage"
-                        android:layout_width="50dp"
-                        android:layout_height="72dp"
-                        android:layout_weight="1"
-                        android:contentDescription="@string/Durian"
-                        app:srcCompat="@drawable/durian" />
-
-                    <TextView
-                        android:id="@+id/Duriantext1"
-                        android:layout_width="100dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:text="@string/Durian" />
-
-                    <Button
-                        android:id="@+id/button4"
-                        android:layout_width="10dp"
-                        android:layout_height="72dp"
-                        android:layout_weight="1"
-                        android:background="@color/colorButton"
-                        android:text="@string/Detail" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="100dp"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:id="@+id/Grapenmage"
-                        android:layout_width="50dp"
-                        android:layout_height="72dp"
-                        android:layout_weight="1"
-                        android:contentDescription="@string/Grape"
-                        app:srcCompat="@drawable/grape" />
-
-                    <TextView
-                        android:id="@+id/Grapetext"
-                        android:layout_width="100dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:text="@string/Grape" />
-
-                    <Button
-                        android:id="@+id/button5"
-                        android:layout_width="10dp"
-                        android:layout_height="72dp"
-                        android:layout_weight="1"
-                        android:background="@color/colorButton"
-                        android:text="@string/Detail" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="100dp"
-                    android:layout_weight="1"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:id="@+id/Orangeimage"
-                        android:layout_width="50dp"
-                        android:layout_height="72dp"
-                        android:layout_weight="1"
-                        app:srcCompat="@drawable/orange" />
-
-                    <TextView
-                        android:id="@+id/Orangetext"
-                        android:layout_width="100dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:text="Orange" />
-
-                    <Button
-                        android:id="@+id/button6"
-                        android:layout_width="10dp"
-                        android:layout_height="72dp"
-                        android:layout_weight="1"
-                        android:background="@color/colorButton"
-                        android:text="@string/Detail" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="100dp"
-                    android:layout_weight="1"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:id="@+id/Strawberryimage"
-                        android:layout_width="50dp"
-                        android:layout_height="72dp"
-                        android:layout_weight="1"
-                        app:srcCompat="@drawable/strawberry" />
-
-                    <TextView
-                        android:id="@+id/Strawberrytext"
-                        android:layout_width="100dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:text="@string/Strawberry" />
-
-                    <Button
-                        android:id="@+id/button7"
-                        android:layout_width="10dp"
-                        android:layout_height="72dp"
-                        android:layout_weight="1"
-                        android:background="@color/colorButton"
-                        android:text="@string/Detail" />
-                </LinearLayout>
-            </LinearLayout>
         </LinearLayout>
     </ScrollView>
 
