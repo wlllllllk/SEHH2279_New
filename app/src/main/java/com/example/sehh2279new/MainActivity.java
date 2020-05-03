@@ -1,5 +1,6 @@
 package com.example.sehh2279new;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.TextView;
@@ -18,11 +19,21 @@ import com.google.android.material.navigation.NavigationView;
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
 
     private DrawerLayout drawer;
-
+    //String login = false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Bundle extra = getIntent().getExtras();
+        //login = extra;
+
+        //if(extra == true){
+
+        //}
+        //Intent i = new Intent(getApplicationContext(), LoginActivity.class);
+        //startActivity(i);
+
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);

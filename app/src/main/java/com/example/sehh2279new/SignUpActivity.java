@@ -1,27 +1,5 @@
 package com.example.sehh2279new;
 
-/*import androidx.appcompat.app.AppCompatActivity;
-
-import android.os.Bundle;
-
-public class SignUpActivity extends AppCompatActivity {
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sign_up);
-
-        this.setTitle("Sign Up");
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-    }
-
-    @Override
-    public boolean onSupportNavigateUp() {
-        finish();
-        return true;
-    }
-}*/
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
@@ -40,6 +18,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseAuthUserCollisionException;
 import com.google.firebase.auth.FirebaseUser;
+
 public class SignUpActivity extends AppCompatActivity implements View.OnClickListener {
     EditText emailEditText;
     EditText passwordEditText;
@@ -51,6 +30,10 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
+
+        this.setTitle("Sign Up");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         emailEditText = findViewById(R.id.editText);
         passwordEditText = findViewById(R.id.edit_signup_pw);
         signUpButton = findViewById(R.id.button_login);
@@ -118,5 +101,11 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
                         }
                     }
                 });
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        finish();
+        return true;
     }
 }
