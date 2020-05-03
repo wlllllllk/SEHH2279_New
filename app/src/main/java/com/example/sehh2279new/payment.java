@@ -1,5 +1,6 @@
 package com.example.sehh2279new;
 
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -19,6 +20,7 @@ public class payment extends AppCompatActivity {
 
         this.setTitle("Checkout");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         ImageView x = findViewById(R.id.imageView27);
         ImageView y = findViewById(R.id.imageView32);
         ImageView z = findViewById(R.id.imageView33);
@@ -32,6 +34,7 @@ public class payment extends AppCompatActivity {
         pricetext2.setText(price);
         String total = extras.getString("key3");
         totaltext2.setText("$ "+total);*/
+
         x.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){

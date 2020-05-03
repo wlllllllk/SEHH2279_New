@@ -44,7 +44,7 @@ public class ShopFragment extends Fragment implements View.OnClickListener{
         i4 = view.findViewById(R.id.add4);
         i5 = view.findViewById(R.id.add5);
         i6 = view.findViewById(R.id.add6);
-        shoppingcart_iv = (ImageView) view.findViewById(R.id.shoppingcart_iv);
+        shoppingcart_iv = view.findViewById(R.id.shoppingcart_iv);
 
         sortfilter.setOnClickListener(this);
         p1.setOnClickListener(this);
@@ -84,7 +84,7 @@ public class ShopFragment extends Fragment implements View.OnClickListener{
                 startActivity(i3);
                 break;
             case R.id.shoppingcart_iv:
-                Intent i4 = new Intent(getContext(), ShoppingcartActivity.class);
+                Intent i4 = new Intent(getContext(), ShopActivityTest.class);
                 startActivity(i4);
                 Toast.makeText(getContext(), "TEST", Toast.LENGTH_SHORT).show();
                 break;
