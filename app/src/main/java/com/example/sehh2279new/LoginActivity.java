@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.util.Patterns;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
@@ -53,6 +54,9 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 startActivity(new Intent(this,SignUpActivity.class));
                 break;
             case R.id.button_login:
+                InputMethodManager inputManager = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);
+                //Close the keyboard after inputting
+                inputManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), 0);
                 loginUser();
                 break;
         }
