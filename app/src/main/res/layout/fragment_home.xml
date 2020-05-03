@@ -40,25 +40,33 @@
                     android:orientation="horizontal" >
 
                     <ImageView
+                        android:id="@+id/imageView11"
+                        android:layout_width="279dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/_2020_05_03_7_42_33" />
+
+                    <ImageView
                         android:id="@+id/imageView4"
-                        android:layout_width="398dp"
+                        android:layout_width="281dp"
                         android:layout_height="100dp"
                         android:layout_weight="1"
                         app:srcCompat="@drawable/_2020_05_03_6_29_05" />
 
                     <ImageView
                         android:id="@+id/imageView6"
-                        android:layout_width="396dp"
+                        android:layout_width="273dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         app:srcCompat="@drawable/_2020_05_03_6_34_19" />
 
                     <ImageView
-                        android:id="@+id/imageView10"
-                        android:layout_width="490dp"
+                        android:id="@+id/imageView13"
+                        android:layout_width="282dp"
                         android:layout_height="100dp"
                         android:layout_weight="1"
-                        app:srcCompat="@drawable/_2020_05_03_6_34_19" />
+                        app:srcCompat="@drawable/_2020_05_03_6_36_55" />
+
                 </LinearLayout>
             </HorizontalScrollView>
 
