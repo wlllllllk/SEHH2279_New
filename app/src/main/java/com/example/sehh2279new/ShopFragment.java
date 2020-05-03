@@ -77,9 +77,12 @@ public class ShopFragment extends Fragment implements View.OnClickListener{
             case R.id.p3:
             case R.id.p4:
             case R.id.p5:
-            case R.id.p6:
                 Intent i2 = new Intent(getContext(), ProductDetailsActivity.class);
                 startActivity(i2);
+                break;
+            case R.id.p6:
+                Intent i3 = new Intent(getContext(), ProductDetails2Activity.class);
+                startActivity(i3);
                 break;
             case R.id.add1:
             case R.id.add2:

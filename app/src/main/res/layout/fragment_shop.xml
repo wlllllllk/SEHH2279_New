@@ -162,7 +162,7 @@
                                         android:id="@+id/imageView201"
                                         android:layout_width="150dp"
                                         android:layout_height="150dp"
-                                        app:srcCompat="@drawable/apple" />
+                                        app:srcCompat="@drawable/banana" />
 
                                     <LinearLayout
                                         android:layout_width="match_parent"
@@ -174,7 +174,7 @@
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:paddingRight="80sp"
-                                            android:text="Apple"
+                                            android:text="Banana"
                                             android:textColor="#000000"
                                             android:textSize="18sp" />
 
@@ -190,26 +190,26 @@
                                         android:id="@+id/textView671"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:text="Sold 10000+" />
+                                        android:text="Sold 7000+" />
 
                                     <TextView
                                         android:id="@+id/textView681"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:text="★★★★" />
+                                        android:text="★" />
 
                                     <TextView
                                         android:id="@+id/textView691"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:foreground="@drawable/strikethrough"
-                                        android:text="$9.9" />
+                                        android:text="$15.9" />
 
                                     <TextView
                                         android:id="@+id/textView701"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:text="$7.7"
+                                        android:text="$12.9"
                                         android:textColor="#F44336"
                                         android:textSize="18sp" />
 
@@ -241,7 +241,7 @@
                                     android:id="@+id/imageView202"
                                     android:layout_width="150dp"
                                     android:layout_height="150dp"
-                                    app:srcCompat="@drawable/apple" />
+                                    app:srcCompat="@drawable/durian" />
 
                                 <LinearLayout
                                     android:layout_width="match_parent"
@@ -253,7 +253,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:paddingRight="80sp"
-                                        android:text="Apple"
+                                        android:text="Durian"
                                         android:textColor="#000000"
                                         android:textSize="18sp" />
 
@@ -319,7 +319,7 @@
                                         android:id="@+id/imageView203"
                                         android:layout_width="150dp"
                                         android:layout_height="150dp"
-                                        app:srcCompat="@drawable/apple" />
+                                        app:srcCompat="@drawable/cherry" />
 
                                     <LinearLayout
                                         android:layout_width="match_parent"
@@ -331,7 +331,7 @@
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:paddingRight="80sp"
-                                            android:text="Apple"
+                                            android:text="Cherry"
                                             android:textColor="#000000"
                                             android:textSize="18sp" />
 
@@ -398,7 +398,7 @@
                                     android:id="@+id/imageView204"
                                     android:layout_width="150dp"
                                     android:layout_height="150dp"
-                                    app:srcCompat="@drawable/apple" />
+                                    app:srcCompat="@drawable/grape" />
 
                                 <LinearLayout
                                     android:layout_width="match_parent"
@@ -410,7 +410,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:paddingRight="80sp"
-                                        android:text="Apple"
+                                        android:text="Grape"
                                         android:textColor="#000000"
                                         android:textSize="18sp" />
 
@@ -476,7 +476,7 @@
                                         android:id="@+id/imageView205"
                                         android:layout_width="150dp"
                                         android:layout_height="150dp"
-                                        app:srcCompat="@drawable/apple" />
+                                        app:srcCompat="@drawable/orange" />
 
                                     <LinearLayout
                                         android:layout_width="match_parent"
@@ -488,7 +488,7 @@
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:paddingRight="80sp"
-                                            android:text="Apple"
+                                            android:text="Orange"
                                             android:textColor="#000000"
                                             android:textSize="18sp" />
 
@@ -517,13 +517,13 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:foreground="@drawable/strikethrough"
-                                        android:text="$9.9" />
+                                        android:text="$10.1" />
 
                                     <TextView
                                         android:id="@+id/textView705"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:text="$7.7"
+                                        android:text="$8.7"
                                         android:textColor="#F44336"
                                         android:textSize="18sp" />
 
