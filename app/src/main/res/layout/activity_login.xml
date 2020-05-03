@@ -39,10 +39,9 @@
                 <EditText
                     android:id="@+id/editText3"
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
                     android:ems="10"
-                    android:inputType="textPersonName" />
+                    android:inputType="textEmailAddress" />
 
             </LinearLayout>
 
