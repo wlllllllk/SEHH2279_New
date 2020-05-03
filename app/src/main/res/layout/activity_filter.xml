@@ -47,48 +47,32 @@
                     android:layout_height="25dp" />
 
                 <TextView
-                    android:id="@+id/textView_category"
+                    android:id="@+id/textView_type"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Category" />
+                    android:text="Type" />
 
                 <Spinner
                     android:id="@+id/spinner_category"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:entries="@array/category" />
+                    android:entries="@array/Type" />
 
                 <Space
                     android:layout_width="match_parent"
                     android:layout_height="25dp" />
 
                 <TextView
-                    android:id="@+id/textView_sub_category"
+                    android:id="@+id/textView_country"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Sub Category" />
+                    android:text="Country" />
 
                 <Spinner
                     android:id="@+id/spinner_sub_category"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:entries="@array/subcategory" />
-
-                <Space
-                    android:layout_width="match_parent"
-                    android:layout_height="25dp" />
-
-                <TextView
-                    android:id="@+id/textView_Brand"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Brand" />
-
-                <Spinner
-                    android:id="@+id/spinner_Brand"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:entries="@array/Brand" />
+                    android:entries="@array/Country" />
 
                 <Space
                     android:layout_width="match_parent"
@@ -173,7 +157,7 @@
 
                 <Space
                     android:layout_width="match_parent"
-                    android:layout_height="20dp"
+                    android:layout_height="90dp"
                     android:layout_weight="1" />
 
                 <LinearLayout
