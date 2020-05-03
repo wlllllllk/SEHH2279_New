@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".ShoppingRecordsDetailsActivitty"></activity>
-        <activity android:name=".ShoppingRecordsDetailActivity" />
+
         <activity android:name=".ProductDetails2Activity" />
         <activity
             android:name=".SignUpActivity"
@@ -29,8 +29,7 @@
             android:name=".ReviewsActivity"
             android:parentActivityName=".ProductDetailsActivity" />
         <activity
-            android:name=".ShoppingRecordsActivity"
-            android:parentActivityName=".AccountFragment" />
+            android:name=".ShoppingRecordsActivity" />
         <activity
             android:name=".ConfirmationActivity"
             android:theme="@style/AppTheme.NoTitleBar" />
@@ -41,8 +40,7 @@
             android:name=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".ShopActivityTest"
-            android:parentActivityName=".MainActivity" />
+            android:name=".ShopActivityTest" />
         <activity
             android:name=".payment"
             android:parentActivityName=".ShopActivityTest" />
