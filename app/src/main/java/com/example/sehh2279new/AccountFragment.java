@@ -83,7 +83,7 @@ public class AccountFragment extends Fragment implements View.OnClickListener{
                 button_logout.setBackgroundResource(R.drawable.button_rounded_realred);
                 if (trial == 2 && button_logout.getText().equals("PRESS AGAIN TO LOGOUT")){
                     Toast.makeText(getContext(), "Logout successfully", Toast.LENGTH_SHORT).show();
-                    Intent i = new Intent(getActivity(), MainActivity.class);
+                    Intent i = new Intent(getActivity(), LoginActivity.class);
                     startActivity(i);
                 }
                 break;
