@@ -132,31 +132,52 @@
                     android:layout_height="match_parent"
                     android:orientation="vertical">
 
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:layout_weight="1" />
+
                     <Button
                         android:id="@+id/letter"
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Letter (A - Z)" />
+                        android:background="#4CAF50"
+                        android:text="Letter (A - Z)"
+                        android:textColor="#FFFFFF" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:layout_weight="1" />
 
                     <Button
                         android:id="@+id/price"
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Price (High - Low)" />
+                        android:background="#4CAF50"
+                        android:text="Price (High - Low)"
+                        android:textColor="#FFFFFF" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:layout_weight="1" />
 
                     <Button
-                        android:id="@+id/button13"
-                        android:layout_width="wrap_content"
+                        android:id="@+id/rating"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Like" />
+                        android:background="#4CAF50"
+                        android:text="Rating (High - Low)"
+                        android:textColor="#FFFFFF" />
                 </LinearLayout>
 
                 <Space
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
+                    android:layout_height="25dp"
                     android:layout_weight="1" />
 
                 <LinearLayout

@@ -12,7 +12,7 @@ import android.widget.Toast;
 
 public class SortFilterActivity extends AppCompatActivity implements View.OnClickListener{
 
-    private Button letter, reset, apply, price;
+    private Button letter, reset, apply, price, rating;
     private Spinner spinner_special_offer, spinner_category, spinner_country;
     private EditText editText_lower, editText_upper;
 
@@ -28,6 +28,7 @@ public class SortFilterActivity extends AppCompatActivity implements View.OnClic
         reset = findViewById(R.id.reset);
         apply = findViewById(R.id.apply);
         price = findViewById(R.id.price);
+        rating = findViewById(R.id.rating);
         spinner_special_offer = findViewById(R.id.spinner_special_offer);
         spinner_category = findViewById(R.id.spinner_category);
         spinner_country = findViewById(R.id.spinner_country);
@@ -38,9 +39,8 @@ public class SortFilterActivity extends AppCompatActivity implements View.OnClic
         reset.setOnClickListener(this);
         apply.setOnClickListener(this);
         price.setOnClickListener(this);
-
+        rating.setOnClickListener(this);
     }
-    //d
 
     @Override
     public void onClick(View v) {
@@ -57,9 +57,16 @@ public class SortFilterActivity extends AppCompatActivity implements View.OnClic
                 else
                     price.setText("Price (High - Low)");
                 break;
+            case R.id.rating:
+                if(rating.getText().equals("Rating (High - Low)"))
+                    rating.setText("Rating (Low - High)");
+                else
+                    rating.setText("Rating (High - Low)");
+                break;
             case R.id.reset:
                 letter.setText("Letter (A - Z)");
                 price.setText("Price (High - Low)");
+                rating.setText("Rating (High - Low)");
                 spinner_special_offer.setSelection(0);
                 spinner_category.setSelection(0);
                 spinner_country.setSelection(0);
@@ -71,7 +78,6 @@ public class SortFilterActivity extends AppCompatActivity implements View.OnClic
                 break;
         }
     }
-    //23
 
     @Override
     public boolean onSupportNavigateUp() {
