@@ -185,7 +185,7 @@
                         android:layout_width="236dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:text="Order number: 999999999                           Status: Finish"
+                        android:text="Order number: 999999998                           Status: Finish"
                         android:textSize="20sp" />
 
                     <Button
