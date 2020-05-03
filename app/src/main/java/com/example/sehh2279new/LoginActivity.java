@@ -54,10 +54,10 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 startActivity(new Intent(this,SignUpActivity.class));
                 break;
             case R.id.button_login:
+                loginUser();
                 InputMethodManager inputManager = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);
                 //Close the keyboard after inputting
                 inputManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), 0);
-                loginUser();
                 break;
         }
     }
