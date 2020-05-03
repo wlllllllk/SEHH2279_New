@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ShoppingRecordsDetailActivity"></activity>
+        <activity android:name=".ShoppingRecordsDetailsActivitty"></activity>
+        <activity android:name=".ShoppingRecordsDetailActivity" />
         <activity android:name=".ProductDetails2Activity" />
         <activity
             android:name=".SignUpActivity"
@@ -24,9 +25,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".SortFilterActivity" />
-        <activity android:name=".ShoppingRecordDetails"
-            android:parentActivityName=".ShoppingRecordsActivity"/>
-
         <activity
             android:name=".ReviewsActivity"
             android:parentActivityName=".ProductDetailsActivity" />

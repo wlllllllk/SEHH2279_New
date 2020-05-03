@@ -30,7 +30,7 @@ public class ShoppingRecordsActivity extends AppCompatActivity implements View.O
     public void onClick(View v) {
         switch(v.getId()) {
             case R.id.button4:
-                Intent i = new Intent (ShoppingRecordsActivity.this, ShoppingRecordDetails.class);
+                Intent i = new Intent (ShoppingRecordsActivity.this, ShoppingRecordsDetailsActivitty.class);
                 startActivity(i);
                 break;
         }
