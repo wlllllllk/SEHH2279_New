@@ -15,7 +15,7 @@
             android:orientation="vertical">
 
             <HorizontalScrollView
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:scrollbarSize="0dp">
@@ -26,6 +26,12 @@
                     android:background="#8BC34A"
                     app:tabIndicatorColor="#FF9800"
                     app:tabTextColor="#FFFFFF">
+
+                    <com.google.android.material.tabs.TabItem
+                        android:id="@+id/tab_all"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="All" />
 
                     <com.google.android.material.tabs.TabItem
                         android:id="@+id/tab_apple"
@@ -68,6 +74,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Strawberry" />
+
                 </com.google.android.material.tabs.TabLayout>
             </HorizontalScrollView>
 
