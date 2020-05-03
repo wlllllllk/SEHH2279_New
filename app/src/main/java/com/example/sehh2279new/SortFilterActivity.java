@@ -40,6 +40,7 @@ public class SortFilterActivity extends AppCompatActivity implements View.OnClic
         price.setOnClickListener(this);
 
     }
+    //d
 
     @Override
     public void onClick(View v) {
