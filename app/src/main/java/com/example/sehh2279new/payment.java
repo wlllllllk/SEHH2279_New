@@ -57,4 +57,10 @@ public class payment extends AppCompatActivity {
             }
         });
     }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        finish();
+        return true;
+    }
 }

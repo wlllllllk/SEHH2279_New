@@ -86,7 +86,6 @@ public class ShopFragment extends Fragment implements View.OnClickListener{
             case R.id.shoppingcart_iv:
                 Intent i4 = new Intent(getContext(), ShopActivityTest.class);
                 startActivity(i4);
-                Toast.makeText(getContext(), "TEST", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.add1:
             case R.id.add2:

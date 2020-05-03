@@ -16,8 +16,13 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_weight="1" />
+
             <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="391dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
                 <SearchView
@@ -26,10 +31,10 @@
 
             </com.google.android.material.textfield.TextInputLayout>
 
-            <TextView
-                android:id="@+id/textView39"
+            <Space
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="10dp"
+                android:layout_weight="1" />
 
             <HorizontalScrollView
                 android:layout_width="match_parent"
@@ -39,7 +44,8 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp">
 
                     <ImageView
                         android:id="@+id/imageView11"
@@ -67,6 +73,7 @@
                         android:layout_width="282dp"
                         android:layout_height="100dp"
                         android:layout_weight="1"
+                        android:paddingRight="10dp"
                         app:srcCompat="@drawable/_2020_05_03_6_36_55" />
 
                 </LinearLayout>
@@ -80,17 +87,20 @@
             <TextView
                 android:id="@+id/textView3"
                 android:layout_width="match_parent"
-                android:layout_height="34dp"
-                android:text="Promotion"
-                android:textAlignment="center"
-                android:textColor="#0B0A0A"
-                android:textSize="18sp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20sp"
+                android:paddingBottom="20sp"
+                android:text="What's New"
+                android:textAlignment="textStart"
+                android:textColor="#2E6B31"
+                android:textSize="24sp"
                 android:textStyle="bold" />
 
             <ImageView
                 android:id="@+id/imageView"
                 android:layout_width="wrap_content"
-                android:layout_height="229dp"
+                android:layout_height="375dp"
+                android:layout_weight="0"
                 android:scaleType="centerInside"
                 app:srcCompat="@drawable/_2020_05_03_4_11_02" />
 
@@ -99,19 +109,21 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#FFFFFF"
+                android:paddingTop="10sp"
                 android:text="50% Summer Promotion"
                 android:textAlignment="center"
-                android:textColor="#020202" />
+                android:textColor="#020202"
+                android:textSize="18sp" />
 
-            <TextView
-                android:id="@+id/textView45"
+            <Space
                 android:layout_width="match_parent"
-                android:layout_height="33dp" />
+                android:layout_height="50dp"
+                android:layout_weight="1" />
 
             <ImageView
                 android:id="@+id/imageView3"
                 android:layout_width="wrap_content"
-                android:layout_height="210dp"
+                android:layout_height="325dp"
                 android:scaleType="centerInside"
                 app:srcCompat="@drawable/_2020_05_03_4_29_41" />
 
@@ -119,19 +131,22 @@
                 android:id="@+id/textView46"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:paddingTop="10sp"
+                android:paddingBottom="0dp"
                 android:text="KK Fruit Discount "
                 android:textAlignment="center"
-                android:textColor="#020202" />
+                android:textColor="#020202"
+                android:textSize="18sp" />
 
-            <TextView
-                android:id="@+id/textView61"
+            <Space
                 android:layout_width="match_parent"
-                android:layout_height="33dp" />
+                android:layout_height="50dp"
+                android:layout_weight="1" />
 
             <ImageView
                 android:id="@+id/imageView7"
                 android:layout_width="wrap_content"
-                android:layout_height="275dp"
+                android:layout_height="420dp"
                 android:scaleType="centerInside"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -141,14 +156,17 @@
                 android:id="@+id/textView63"
                 android:layout_width="match_parent"
                 android:layout_height="33dp"
+                android:paddingTop="10sp"
+                android:paddingBottom="0dp"
                 android:text="Fruit Drink"
                 android:textAlignment="center"
-                android:textColor="#040303" />
+                android:textColor="#040303"
+                android:textSize="18sp" />
 
-            <TextView
-                android:id="@+id/textView64"
+            <Space
                 android:layout_width="match_parent"
-                android:layout_height="33dp" />
+                android:layout_height="50dp"
+                android:layout_weight="1" />
 
             <ImageView
                 android:id="@+id/imageView9"
@@ -160,9 +178,17 @@
                 android:id="@+id/textView65"
                 android:layout_width="match_parent"
                 android:layout_height="33dp"
+                android:paddingTop="10sp"
+                android:paddingBottom="0dp"
                 android:text="Healthy Fruit Month"
                 android:textAlignment="center"
-                android:textColor="#040303" />
+                android:textColor="#040303"
+                android:textSize="18sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1" />
 
         </LinearLayout>
     </ScrollView>

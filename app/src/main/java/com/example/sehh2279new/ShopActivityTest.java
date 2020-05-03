@@ -6,15 +6,16 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class ShopActivityTest extends AppCompatActivity {
+public class ShopActivityTest extends AppCompatActivity implements View.OnClickListener{
         private int value;
         private double price;
         private double totalprice;
-
+        private Button checkout, delete1, delete2;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -23,7 +24,14 @@ public class ShopActivityTest extends AppCompatActivity {
 
         this.setTitle("Shopping Cart");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        Button checkout = findViewById(R.id.button5);
+        checkout = findViewById(R.id.button5);
+        delete1 = findViewById(R.id.delete1);
+        delete2 = findViewById(R.id.delete2);
+
+        checkout.setOnClickListener(this);
+        delete1.setOnClickListener(this);
+        delete2.setOnClickListener(this);
+
 
         /*TextView quantitytext = findViewById(R.id.textView20);
         TextView pricetext = findViewById(R.id.textView25);
@@ -37,18 +45,6 @@ public class ShopActivityTest extends AppCompatActivity {
         pricetext.setText("$ "+Double.toString(price));
         totalprice = price+26.1;
         total.setText("$ "+Double.toString(totalprice));*/
-        checkout.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-
-                Intent i = new Intent(ShopActivityTest.this,payment.class);
-                /*i.putExtra("key1",Integer.toString(value));
-                i.putExtra("key2",Double.toString(price));
-                i.putExtra("key3",Double.toString(totalprice));*/
-                startActivity(i);
-
-            }
-        });
 
         /*delete.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -74,6 +70,20 @@ public class ShopActivityTest extends AppCompatActivity {
 
             }
         });*/
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch(v.getId()){
+            case R.id.button5:
+                Intent i = new Intent(ShopActivityTest.this,payment.class);
+                startActivity(i);
+                break;
+            case R.id.delete1:
+            case R.id.delete2:
+                Toast.makeText(getApplicationContext(), "Function not implemented", Toast.LENGTH_SHORT).show();
+                break;
+        }
     }
 
     public boolean onSupportNavigateUp() {
