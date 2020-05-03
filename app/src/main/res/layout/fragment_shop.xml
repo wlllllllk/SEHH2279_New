@@ -16,7 +16,9 @@
 
             <HorizontalScrollView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scrollbarSize="0dp">
 
                 <com.google.android.material.tabs.TabLayout
                     android:layout_width="wrap_content"
@@ -26,45 +28,53 @@
                     app:tabTextColor="#FFFFFF">
 
                     <com.google.android.material.tabs.TabItem
+                        android:id="@+id/tab_apple"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Apple" />
 
                     <com.google.android.material.tabs.TabItem
+                        android:id="@+id/tab_banana"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Banana" />
 
                     <com.google.android.material.tabs.TabItem
-                        android:id="@+id/tabItem"
+                        android:id="@+id/tab_cherry"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Cherry" />
 
                     <com.google.android.material.tabs.TabItem
+                        android:id="@+id/tab_durian"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Durian" />
 
                     <com.google.android.material.tabs.TabItem
-                        android:id="@+id/tabItem2"
+                        android:id="@+id/tab_grape"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Grape" />
 
                     <com.google.android.material.tabs.TabItem
-                        android:id="@+id/tabItem3"
+                        android:id="@+id/tab_orange"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Orange" />
 
                     <com.google.android.material.tabs.TabItem
-                        android:id="@+id/tabItem4"
+                        android:id="@+id/tab_strawberry"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Strawberry" />
                 </com.google.android.material.tabs.TabLayout>
             </HorizontalScrollView>
+
+            <androidx.viewpager.widget.ViewPager
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
 
         </LinearLayout>
     </ScrollView>
