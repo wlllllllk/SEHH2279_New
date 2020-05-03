@@ -14,75 +14,505 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <HorizontalScrollView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:scrollbarSize="0dp">
-
-                <com.google.android.material.tabs.TabLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:background="#8BC34A"
-                    app:tabIndicatorColor="#FF9800"
-                    app:tabTextColor="#FFFFFF">
-
-                    <com.google.android.material.tabs.TabItem
-                        android:id="@+id/tab_all"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="All" />
-
-                    <com.google.android.material.tabs.TabItem
-                        android:id="@+id/tab_apple"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Apple" />
-
-                    <com.google.android.material.tabs.TabItem
-                        android:id="@+id/tab_banana"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Banana" />
-
-                    <com.google.android.material.tabs.TabItem
-                        android:id="@+id/tab_cherry"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Cherry" />
-
-                    <com.google.android.material.tabs.TabItem
-                        android:id="@+id/tab_durian"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Durian" />
-
-                    <com.google.android.material.tabs.TabItem
-                        android:id="@+id/tab_grape"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Grape" />
-
-                    <com.google.android.material.tabs.TabItem
-                        android:id="@+id/tab_orange"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Orange" />
-
-                    <com.google.android.material.tabs.TabItem
-                        android:id="@+id/tab_strawberry"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Strawberry" />
-
-                </com.google.android.material.tabs.TabLayout>
-            </HorizontalScrollView>
-
-            <androidx.viewpager.widget.ViewPager
+            <SearchView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1" />
+                android:background="#8BC34A"
+                android:hapticFeedbackEnabled="false"
+                android:queryHint="Search for products" />
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="55dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/imageView20"
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    app:srcCompat="@drawable/apple" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/textView66"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingRight="80sp"
+                                        android:text="Apple"
+                                        android:textColor="#000000"
+                                        android:textSize="18sp" />
+
+                                    <ImageView
+                                        android:id="@+id/imageView22"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="0"
+                                        app:srcCompat="@drawable/shopping_cart" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id="@+id/textView67"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Sold 10000+" />
+
+                                <TextView
+                                    android:id="@+id/textView68"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="★★★★" />
+
+                                <TextView
+                                    android:id="@+id/textView69"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:foreground="@drawable/strikethrough"
+                                    android:text="$9.9" />
+
+                                <TextView
+                                    android:id="@+id/textView70"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="$7.7"
+                                    android:textColor="#F44336"
+                                    android:textSize="18sp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/imageView20"
+                                        android:layout_width="150dp"
+                                        android:layout_height="150dp"
+                                        app:srcCompat="@drawable/apple" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/textView66"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:paddingRight="80sp"
+                                            android:text="Apple"
+                                            android:textColor="#000000"
+                                            android:textSize="18sp" />
+
+                                        <ImageView
+                                            android:id="@+id/imageView22"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="0"
+                                            app:srcCompat="@drawable/shopping_cart" />
+                                    </LinearLayout>
+
+                                    <TextView
+                                        android:id="@+id/textView67"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Sold 10000+" />
+
+                                    <TextView
+                                        android:id="@+id/textView68"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="★★★★" />
+
+                                    <TextView
+                                        android:id="@+id/textView69"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:foreground="@drawable/strikethrough"
+                                        android:text="$9.9" />
+
+                                    <TextView
+                                        android:id="@+id/textView70"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="$7.7"
+                                        android:textColor="#F44336"
+                                        android:textSize="18sp" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/imageView20"
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    app:srcCompat="@drawable/apple" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/textView66"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingRight="80sp"
+                                        android:text="Apple"
+                                        android:textColor="#000000"
+                                        android:textSize="18sp" />
+
+                                    <ImageView
+                                        android:id="@+id/imageView22"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="0"
+                                        app:srcCompat="@drawable/shopping_cart" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id="@+id/textView67"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Sold 10000+" />
+
+                                <TextView
+                                    android:id="@+id/textView68"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="★★★★" />
+
+                                <TextView
+                                    android:id="@+id/textView69"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:foreground="@drawable/strikethrough"
+                                    android:text="$9.9" />
+
+                                <TextView
+                                    android:id="@+id/textView70"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="$7.7"
+                                    android:textColor="#F44336"
+                                    android:textSize="18sp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/imageView20"
+                                        android:layout_width="150dp"
+                                        android:layout_height="150dp"
+                                        app:srcCompat="@drawable/apple" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/textView66"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:paddingRight="80sp"
+                                            android:text="Apple"
+                                            android:textColor="#000000"
+                                            android:textSize="18sp" />
+
+                                        <ImageView
+                                            android:id="@+id/imageView22"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="0"
+                                            app:srcCompat="@drawable/shopping_cart" />
+                                    </LinearLayout>
+
+                                    <TextView
+                                        android:id="@+id/textView67"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Sold 10000+" />
+
+                                    <TextView
+                                        android:id="@+id/textView68"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="★★★★" />
+
+                                    <TextView
+                                        android:id="@+id/textView69"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:foreground="@drawable/strikethrough"
+                                        android:text="$9.9" />
+
+                                    <TextView
+                                        android:id="@+id/textView70"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="$7.7"
+                                        android:textColor="#F44336"
+                                        android:textSize="18sp" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/imageView20"
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    app:srcCompat="@drawable/apple" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/textView66"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingRight="80sp"
+                                        android:text="Apple"
+                                        android:textColor="#000000"
+                                        android:textSize="18sp" />
+
+                                    <ImageView
+                                        android:id="@+id/imageView22"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="0"
+                                        app:srcCompat="@drawable/shopping_cart" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id="@+id/textView67"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Sold 10000+" />
+
+                                <TextView
+                                    android:id="@+id/textView68"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="★★★★" />
+
+                                <TextView
+                                    android:id="@+id/textView69"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:foreground="@drawable/strikethrough"
+                                    android:text="$9.9" />
+
+                                <TextView
+                                    android:id="@+id/textView70"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="$7.7"
+                                    android:textColor="#F44336"
+                                    android:textSize="18sp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/imageView20"
+                                        android:layout_width="150dp"
+                                        android:layout_height="150dp"
+                                        app:srcCompat="@drawable/apple" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/textView66"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:paddingRight="80sp"
+                                            android:text="Apple"
+                                            android:textColor="#000000"
+                                            android:textSize="18sp" />
+
+                                        <ImageView
+                                            android:id="@+id/imageView22"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="0"
+                                            app:srcCompat="@drawable/shopping_cart" />
+                                    </LinearLayout>
+
+                                    <TextView
+                                        android:id="@+id/textView67"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Sold 10000+" />
+
+                                    <TextView
+                                        android:id="@+id/textView68"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="★★★★" />
+
+                                    <TextView
+                                        android:id="@+id/textView69"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:foreground="@drawable/strikethrough"
+                                        android:text="$9.9" />
+
+                                    <TextView
+                                        android:id="@+id/textView70"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="$7.7"
+                                        android:textColor="#F44336"
+                                        android:textSize="18sp" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
         </LinearLayout>
     </ScrollView>
 
