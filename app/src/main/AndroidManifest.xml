@@ -24,6 +24,9 @@
         </activity>
 
         <activity android:name=".SortFilterActivity" />
+        <activity android:name=".ShoppingRecordDetails"
+            android:parentActivityName=".ShoppingRecordsActivity"/>
+
         <activity
             android:name=".ReviewsActivity"
             android:parentActivityName=".ProductDetailsActivity" />
