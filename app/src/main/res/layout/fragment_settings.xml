@@ -12,6 +12,7 @@
         android:layout_height="match_parent">
 
         <LinearLayout
+            android:id="@+id/settings"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -153,10 +154,10 @@
                 android:layout_weight="1"
                 android:paddingLeft="15sp"
                 android:paddingTop="5sp"
+                android:paddingBottom="5sp"
                 android:text="Accessbility"
                 android:textSize="16sp"
-                android:textStyle="bold"
-                android:paddingBottom="5sp" />
+                android:textStyle="bold" />
 
             <LinearLayout
                 android:layout_width="match_parent"

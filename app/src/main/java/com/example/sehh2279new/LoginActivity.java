@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.util.Patterns;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
@@ -35,7 +34,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         setContentView(R.layout.activity_login);
 
         this.setTitle("Login");
-        //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         emailEditText = findViewById(R.id.editText3);
         passwordEditText = findViewById(R.id.editText7);

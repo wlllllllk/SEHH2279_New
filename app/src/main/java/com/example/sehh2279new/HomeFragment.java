@@ -16,7 +16,6 @@ public class HomeFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        //getActivity().setTitle("Home");
 
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
