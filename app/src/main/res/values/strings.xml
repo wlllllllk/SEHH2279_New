@@ -22,4 +22,26 @@
     <string name="textview8">Accssibility</string>
     <string name="textview9">Colour Blindness</string>
     <string name="textview10">Others</string>
+    <string-array name="specialoffer">
+        <item>Any</item>
+        <item>None</item>
+    </string-array>
+    <string-array name="category">
+        <item>Any</item>
+        <item>Food</item>
+        <item>Drink</item>
+        <item>Daily necessities</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="subcategory">
+        <item>Any</item>
+        <item>Fruit</item>
+        <item>Vegetable</item>
+        <item>Groceries</item>
+        <item>Meat</item>
+        <item>Snacks</item>
+    </string-array>
+    <string-array name="Brand">
+        <item>Any</item>
+    </string-array>
 </resources>
