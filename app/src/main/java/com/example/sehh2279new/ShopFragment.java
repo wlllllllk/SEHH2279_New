@@ -22,7 +22,7 @@ public class ShopFragment extends Fragment implements View.OnClickListener{
 
     Button sortfilter;
     LinearLayout p1, p2, p3, p4, p5, p6;
-    ImageView i1, i2, i3, i4, i5, i6;
+    ImageView i1, i2, i3, i4, i5, i6, shoppingcart;
 
     @Nullable
     @Override
@@ -45,6 +45,7 @@ public class ShopFragment extends Fragment implements View.OnClickListener{
         i4 = view.findViewById(R.id.add4);
         i5 = view.findViewById(R.id.add5);
         i6 = view.findViewById(R.id.add6);
+        shoppingcart = view.findViewById(R.id.shoppingcart);
 
         sortfilter.setOnClickListener(this);
 
@@ -61,6 +62,7 @@ public class ShopFragment extends Fragment implements View.OnClickListener{
         i4.setOnClickListener(this);
         i5.setOnClickListener(this);
         i6.setOnClickListener(this);
+        shoppingcart.setOnClickListener(this);
 
         return view;
     }
@@ -91,6 +93,10 @@ public class ShopFragment extends Fragment implements View.OnClickListener{
             case R.id.add5:
             case R.id.add6:
                 Toast.makeText(getContext(), "Added to cart", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.shoppingcart:
+                Intent i4 = new Intent(getContext(), ShoppingcartActivity.class);
+                startActivity(i4);
                 break;
 
         }
